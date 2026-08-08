@@ -1,0 +1,11 @@
+﻿{
+	"name":	"Content Collaboration Expansion",
+	"id":	"CCE",
+	"version":	"1",
+	"supported_game_version":	"1.3",
+	"short_description":	"Various content for our favorite countries!",
+	"tags":	["Balance", "Events", "Fixes", "Gameplay", "Government and Estates", "Military"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}
