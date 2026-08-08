@@ -1,4 +1,4 @@
-# Maximum levels for Content Expanded generic buildings.
+﻿# Maximum levels for Content Expanded generic buildings.
 
 ce_stables_max_level = {
 	add = {

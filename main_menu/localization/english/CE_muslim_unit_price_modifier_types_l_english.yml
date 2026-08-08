@@ -1,0 +1,21 @@
+﻿l_english:
+
+ a_ce_sudanese_javelinmen_build: "$a_ce_sudanese_javelinmen$ Build Cost"
+ a_ce_sudanese_javelinmen_maintenance: "$a_ce_sudanese_javelinmen$ Maintenance Cost"
+ a_ce_sudanese_javelinmen_2_build: "$a_ce_sudanese_javelinmen_2$ Build Cost"
+ a_ce_sudanese_javelinmen_2_maintenance: "$a_ce_sudanese_javelinmen_2$ Maintenance Cost"
+ a_ce_sudanese_javelinmen_3_build: "$a_ce_sudanese_javelinmen_3$ Build Cost"
+ a_ce_sudanese_javelinmen_3_maintenance: "$a_ce_sudanese_javelinmen_3$ Maintenance Cost"
+
+ MODIFIER_TYPE_NAME_a_ce_sudanese_javelinmen_build_cost_modifier: "$a_ce_sudanese_javelinmen$ Build Cost"
+ MODIFIER_TYPE_DESC_a_ce_sudanese_javelinmen_build_cost_modifier: "This impacts how much it costs to [recruit|e] $a_ce_sudanese_javelinmen$."
+ MODIFIER_TYPE_NAME_a_ce_sudanese_javelinmen_maintenance_cost_modifier: "$a_ce_sudanese_javelinmen$ Maintenance Cost"
+ MODIFIER_TYPE_DESC_a_ce_sudanese_javelinmen_maintenance_cost_modifier: "This impacts how much it costs to [maintain|e] $a_ce_sudanese_javelinmen$."
+ MODIFIER_TYPE_NAME_a_ce_sudanese_javelinmen_2_build_cost_modifier: "$a_ce_sudanese_javelinmen_2$ Build Cost"
+ MODIFIER_TYPE_DESC_a_ce_sudanese_javelinmen_2_build_cost_modifier: "This impacts how much it costs to [recruit|e] $a_ce_sudanese_javelinmen_2$."
+ MODIFIER_TYPE_NAME_a_ce_sudanese_javelinmen_2_maintenance_cost_modifier: "$a_ce_sudanese_javelinmen_2$ Maintenance Cost"
+ MODIFIER_TYPE_DESC_a_ce_sudanese_javelinmen_2_maintenance_cost_modifier: "This impacts how much it costs to [maintain|e] $a_ce_sudanese_javelinmen_2$."
+ MODIFIER_TYPE_NAME_a_ce_sudanese_javelinmen_3_build_cost_modifier: "$a_ce_sudanese_javelinmen_3$ Build Cost"
+ MODIFIER_TYPE_DESC_a_ce_sudanese_javelinmen_3_build_cost_modifier: "This impacts how much it costs to [recruit|e] $a_ce_sudanese_javelinmen_3$."
+ MODIFIER_TYPE_NAME_a_ce_sudanese_javelinmen_3_maintenance_cost_modifier: "$a_ce_sudanese_javelinmen_3$ Maintenance Cost"
+ MODIFIER_TYPE_DESC_a_ce_sudanese_javelinmen_3_maintenance_cost_modifier: "This impacts how much it costs to [maintain|e] $a_ce_sudanese_javelinmen_3$."

@@ -99,7 +99,7 @@ a_ce_archontopoulai = {
 
 	buildable = yes
 
-	strenth_damage_done = 0.10
+	strength_damage_done = 0.10
 
 	combat = {
 		grasslands = 0.10
@@ -117,8 +117,6 @@ a_ce_mangonel = {
 	maintenance_demand = ce_mangonel_maintenance
 
 	buildable = yes
-	bombard = yes
-
 	bombard_efficiency = 0.25
 }
 
@@ -239,7 +237,7 @@ a_ce_archontopoulai_2 = {
 
 	buildable = yes
 
-	strenth_damage_done = 0.10
+	strength_damage_done = 0.10
 
 	combat = {
 		grasslands = 0.10
@@ -257,8 +255,6 @@ a_ce_mangonel_2 = {
 	maintenance_demand = ce_mangonel_maintenance
 
 	buildable = yes
-	bombard = yes
-
 	bombard_efficiency = 0.25
 }
 

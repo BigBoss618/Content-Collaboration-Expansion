@@ -1,1 +1,54 @@
-﻿
+﻿a_ce_sudanese_javelinmen = {
+	copy_from = a_age_1_traditions_light_infantry
+	is_special = yes
+	upgrades_to = a_ce_sudanese_javelinmen_2
+
+	construction_demand = ce_sudanese_javelinmen_construction
+	maintenance_demand = ce_sudanese_javelinmen_maintenance
+
+	buildable = yes
+
+	gfx_tags = { spear_tag light_tag }
+}
+
+a_ce_sudanese_javelinmen_2 = {
+	copy_from = a_age_2_renaissance_light_infantry
+	is_special = yes
+	upgrades_to = a_ce_sudanese_javelinmen_3
+
+	construction_demand = ce_sudanese_javelinmen_construction
+	maintenance_demand = ce_sudanese_javelinmen_maintenance
+
+	buildable = yes
+
+	gfx_tags = { spear_tag light_tag }
+}
+
+a_ce_sudanese_javelinmen_3 = {
+	copy_from = a_age_3_discovery_light_infantry
+	is_special = yes
+	upgrades_to = a_arquebusiers
+
+	construction_demand = ce_sudanese_javelinmen_construction
+	maintenance_demand = ce_sudanese_javelinmen_maintenance
+
+	buildable = yes
+
+	gfx_tags = { spear_tag light_tag }
+}
+
+a_ce_lamtuna_spearmen = {
+	copy_from = a_age_1_traditions_light_infantry
+	is_special = yes
+	upgrades_to = a_crossbowmen
+
+	buildable = yes
+
+	# A disciplined spear wall is difficult to envelop, but its light armour
+	# leaves it vulnerable once the formation is broken or exposed to missiles.
+	secure_flanks_defense = 0.025
+	combat_speed = -0.10
+	strength_damage_taken = 0.05
+
+	gfx_tags = { spear_tag light_tag }
+}

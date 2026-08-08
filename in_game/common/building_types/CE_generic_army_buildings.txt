@@ -51,7 +51,7 @@ ce_town_watch = {
 
 	modifier = {
 		local_defensive = 0.05
-		local_manpower = 0.005
+		local_manpower = 0.01
 	}
 
 	possible_production_methods = {
@@ -83,7 +83,7 @@ ce_militia_barracks = {
 
 	modifier = {
 		local_levy_size_modifier = 0.1
-		local_manpower = 0.01
+		local_manpower = 0.05
 	}
 
 	possible_production_methods = {
@@ -115,7 +115,7 @@ ce_town_guard = {
 
 	modifier = {
 		local_defensive = 0.10
-		local_manpower = 0.01
+		local_manpower = 0.05
 	}
 
 	possible_production_methods = {
@@ -180,7 +180,7 @@ ce_stables = {
 	build_time = medium_soldier_building
 
 	modifier = {
-		local_manpower = 0.005
+		local_manpower = 0.00312
 		local_horses_output_modifier = 0.025
 	}
 

@@ -1,1 +1,33 @@
 ﻿# Muslim unit prices
+
+# Additive adjustments to the Light Infantry bases of 40 gold to build and 0.4 gold to maintain.
+# Manpower remains at the category baseline and continues to scale with unit strength.
+a_ce_sudanese_javelinmen_build = {
+	gold = -4
+	manpower = 0
+}
+
+a_ce_sudanese_javelinmen_maintenance = {
+	gold = -0.04
+	manpower = 0
+}
+
+a_ce_sudanese_javelinmen_2_build = {
+	gold = -4
+	manpower = 0
+}
+
+a_ce_sudanese_javelinmen_2_maintenance = {
+	gold = -0.04
+	manpower = 0
+}
+
+a_ce_sudanese_javelinmen_3_build = {
+	gold = -4
+	manpower = 0
+}
+
+a_ce_sudanese_javelinmen_3_maintenance = {
+	gold = -0.04
+	manpower = 0
+}

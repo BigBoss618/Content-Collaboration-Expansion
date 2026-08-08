@@ -1,4 +1,4 @@
-ce_archontopoulai_advance = {
+﻿ce_archontopoulai_advance = {
 	age = age_1_traditions
 
 	potential = {

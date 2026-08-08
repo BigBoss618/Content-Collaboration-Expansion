@@ -1,1 +1,49 @@
-﻿
+﻿# Muslim Group unit advances
+
+ce_sudanese_javelinmen_advance = {
+	age = age_1_traditions
+
+	potential = {
+		religion.group = religion_group:muslim
+	}
+
+	unlock_unit = a_ce_sudanese_javelinmen
+
+	requires = unlock_archers_advance
+}
+
+ce_sudanese_javelinmen_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		religion.group = religion_group:muslim
+	}
+
+	unlock_unit = a_ce_sudanese_javelinmen_2
+
+	requires = unlock_crossbowmen_advance
+}
+
+ce_sudanese_javelinmen_3_advance = {
+	age = age_3_discovery
+
+	potential = {
+		religion.group = religion_group:muslim
+	}
+
+	unlock_unit = a_ce_sudanese_javelinmen_3
+
+	requires = unlock_early_arquebusiers_advance
+}
+
+ce_lamtuna_spearmen_advance = {
+	age = age_1_traditions
+
+	potential = {
+		religion.group = religion_group:muslim
+	}
+
+	unlock_unit = a_ce_lamtuna_spearmen
+
+	requires = unlock_footmen_advance
+}

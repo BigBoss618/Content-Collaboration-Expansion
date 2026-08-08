@@ -1,0 +1,47 @@
+﻿a_ce_sudanese_javelinmen_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_sudanese_javelinmen_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_sudanese_javelinmen_2_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_sudanese_javelinmen_2_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_sudanese_javelinmen_3_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_sudanese_javelinmen_3_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}

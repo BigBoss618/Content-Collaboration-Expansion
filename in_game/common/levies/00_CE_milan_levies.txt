@@ -1,4 +1,4 @@
-# Specialized levy definitions must load before the generic levy pool.
+﻿# Specialized levy definitions must load before the generic levy pool.
 levy_a_ce_milanese_cavalry_militia_2 = {
 	size = 0.05
 

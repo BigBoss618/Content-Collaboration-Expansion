@@ -1,1 +1,15 @@
-﻿
+﻿ce_sudanese_javelinmen_construction = {
+	# 10% below the vanilla archer equipment demand.
+	weaponry = 0.09
+	leather = 0.09
+	lumber = 0.09
+	category = regiment_construction
+}
+
+ce_sudanese_javelinmen_maintenance = {
+	# 10% below the vanilla archer equipment demand.
+	weaponry = 0.054
+	leather = 0.054
+	lumber = 0.054
+	category = regiment_maintenance
+}

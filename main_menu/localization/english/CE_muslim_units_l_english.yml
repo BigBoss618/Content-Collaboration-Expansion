@@ -1,1 +1,11 @@
 ﻿l_english:
+
+ #Muslim Units
+ a_ce_sudanese_javelinmen: "Sudanese Javelinmen"
+ a_ce_sudanese_javelinmen_desc: "Good for weakening units and breaking up formations, but will quickly dissolve if caught in melee."
+ a_ce_sudanese_javelinmen_2: "Late $a_ce_sudanese_javelinmen$"
+ a_ce_sudanese_javelinmen_2_desc: "$a_ce_sudanese_javelinmen_desc$"
+ a_ce_sudanese_javelinmen_3: "Reformed $a_ce_sudanese_javelinmen$"
+ a_ce_sudanese_javelinmen_3_desc: "$a_ce_sudanese_javelinmen_desc$"
+ a_ce_lamtuna_spearmen: "Lamtuna Spearmen"
+ a_ce_lamtuna_spearmen_desc: "The Lamtuna are nomadic Saharan Berbers famed for their fierceness and discipline, whose warriors played an important part in the early Moorish conquest of Iberia. Armed with long spears and broad shields, they can hold a solid line against cavalry, but their light armour leaves them vulnerable to missile fire."
