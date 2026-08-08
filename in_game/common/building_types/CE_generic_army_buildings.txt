@@ -1,0 +1,345 @@
+﻿# Generic manpower and army buildings
+
+ce_militia_drill_square = {
+	audio_tier = 1
+	icon = ce_militia_drill_square
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_1_military_building_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	build_time = medium_soldier_building
+
+	modifier = {
+		local_levy_size_modifier = 0.05
+		local_manpower = 0.005
+	}
+
+	possible_production_methods = {
+		ce_militia_drill_square_maintenance
+	}
+	construction_demand = ce_militia_drill_square_construction
+}
+
+ce_town_watch = {
+	audio_tier = 1
+	icon = ce_town_watch
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_1_military_building_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	build_time = medium_soldier_building
+
+	modifier = {
+		local_defensive = 0.05
+		local_manpower = 0.005
+	}
+
+	possible_production_methods = {
+		ce_town_watch_maintenance
+	}
+	construction_demand = ce_town_watch_construction
+}
+
+ce_militia_barracks = {
+	audio_tier = 2
+	icon = ce_militia_barracks
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_2_military_building_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	build_time = soldier_building
+
+	obsolete = ce_militia_drill_square
+
+	modifier = {
+		local_levy_size_modifier = 0.1
+		local_manpower = 0.01
+	}
+
+	possible_production_methods = {
+		ce_militia_barracks_maintenance
+	}
+	construction_demand = ce_militia_barracks_construction
+}
+
+ce_town_guard = {
+	audio_tier = 2
+	icon = ce_town_guard
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_2_military_building_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	build_time = soldier_building
+
+	obsolete = ce_town_watch
+
+	modifier = {
+		local_defensive = 0.10
+		local_manpower = 0.01
+	}
+
+	possible_production_methods = {
+		ce_town_guard_maintenance
+	}
+	construction_demand = ce_town_guard_construction
+}
+
+ce_city_watch = {
+	audio_tier = 2
+	icon = ce_city_watch
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_3_military_building_employment
+
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	build_time = soldier_building
+
+	obsolete = ce_town_guard
+
+	modifier = {
+		local_defensive = 0.10
+		local_manpower = 0.015
+	}
+
+	possible_production_methods = {
+		ce_city_watch_maintenance
+	}
+	construction_demand = ce_city_watch_construction
+}
+
+ce_stables = {
+	audio_tier = 1
+	icon = ce_stables
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = ce_stables_max_level
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_1_military_building_employment
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	location_potential = {
+		raw_material = goods:horses
+	}
+
+	important_for_AI = yes
+	build_time = medium_soldier_building
+
+	modifier = {
+		local_manpower = 0.005
+		local_horses_output_modifier = 0.025
+	}
+
+	possible_production_methods = {
+		ce_stables_maintenance
+	}
+	construction_demand = ce_stables_construction
+}
+
+ce_swordsmith_guild = {
+	audio_tier = 1
+	icon = ce_swordsmith_guild
+	is_foreign = no
+	pop_type = laborers
+	max_levels = ce_swordsmith_guild_max_level
+
+	category = weapons_industry_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_1_military_building_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	build_time = guild_build_time
+
+	modifier = {
+		local_weaponry_output_modifier = 0.025
+	}
+
+	possible_production_methods = {
+		ce_swordsmith_guild_maintenance
+	}
+	construction_demand = ce_swordsmith_guild_construction
+}
+
+ce_master_swordsmith_guild = {
+	audio_tier = 2
+	icon = ce_master_swordsmith_guild
+	is_foreign = no
+	pop_type = laborers
+	max_levels = ce_swordsmith_guild_max_level
+
+	category = weapons_industry_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_2_military_building_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	build_time = workshop_build_time
+
+	obsolete = ce_swordsmith_guild
+
+	modifier = {
+		local_weaponry_output_modifier = 0.05
+	}
+
+	possible_production_methods = {
+		ce_master_swordsmith_guild_maintenance
+	}
+	construction_demand = ce_master_swordsmith_guild_construction
+}
+
+ce_armourers_guild = {
+	audio_tier = 4
+	icon = ce_armourers_guild
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+
+	category = weapons_industry_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_major_guild_employment
+
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	location_potential = {
+		is_capital = yes
+	}
+
+	remove_if = {
+		is_no_longer_capital = yes
+	}
+
+	important_for_AI = yes
+	expensive = yes
+	price = p_building_age_5_absolutism
+	build_time = large_capital_build_time
+
+	modifier = {
+		local_soldiers_pop_growth = 0.2
+	}
+
+	capital_country_modifier = {
+		military_tactics = 0.05
+	}
+
+	possible_production_methods = {
+		ce_armourers_guild_maintenance
+	}
+	construction_demand = ce_armourers_guild_construction
+
+	custom_tags = { guild }
+}
+
+ce_grand_mercantile_exchange = {
+	audio_tier = 4
+	icon = ce_grand_mercantile_exchange
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+
+	category = trade_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_major_guild_employment
+
+	city = yes
+	megalopolis = yes
+
+	location_potential = {
+		is_capital = yes
+		is_market_center = yes
+	}
+
+	remove_if = {
+		OR = {
+			is_no_longer_capital = yes
+			location = { is_market_center = no }
+		}
+	}
+
+	important_for_AI = yes
+	expensive = yes
+	price = p_building_age_5_absolutism
+	build_time = large_capital_build_time
+
+	modifier = {
+		local_burghers_pop_growth = 0.20
+		local_trades_per_burgher = 1.00
+	}
+
+	capital_country_modifier = {
+		global_merchant_capacity_modifier = 0.10
+	}
+
+	possible_production_methods = {
+		ce_grand_mercantile_exchange_maintenance
+	}
+	construction_demand = ce_grand_mercantile_exchange_construction
+
+	custom_tags = { guild }
+}

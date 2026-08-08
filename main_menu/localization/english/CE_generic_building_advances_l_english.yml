@@ -1,0 +1,26 @@
+﻿l_english:
+
+ #Generic Building Advances
+ ce_militia_drill_square_advance: "Militia Drill Squares"
+ ce_militia_drill_square_advance_desc: "Our towns rely upon citizens who can take up arms when called. We will establish public drill squares where their formations and discipline can be practiced. This preparation allows us to raise larger local levies and maintain a modest reserve of manpower."
+ ce_town_watch_advance: "Town Watches"
+ ce_town_watch_advance_desc: "Our growing towns require guards who can patrol their streets and defend their gates. We will maintain permanent watches drawn from trained local soldiers. This organization strengthens urban defenses and supplies a modest reserve of manpower."
+
+ ce_militia_barracks_advance: "Militia Barracks"
+ ce_militia_barracks_advance_desc: "Our urban militia require more than an open square if they are to mobilize reliably. We will provide permanent quarters, equipment stores, and regular instruction. This institution expands local levies and supplies a larger reserve of manpower."
+ ce_town_guard_advance: "Town Guards"
+ ce_town_guard_advance_desc: "Our town watches must become more disciplined as urban defenses grow in complexity. We will organize them into permanent guards with assigned posts, equipment, and chains of command. This force provides more manpower while making our towns considerably harder to besiege."
+
+ ce_city_watch_advance: "City Watches"
+ ce_city_watch_advance_desc: "Our largest cities require a coordinated force capable of guarding many gates, walls, and districts. We will establish professional city watches supported by permanent mustering systems. This organization provides substantial manpower while preserving the defensive strength achieved by our town guards."
+ ce_stables_advance: "$ce_stables$"
+ ce_stables_advance_desc: "Our cavalry requires dependable mounts, disciplined riders, and officers versed in horsemanship. We will establish permanent stables and training grounds wherever horses are raised. These schools strengthen the local remount supply while maintaining a reserve of trained military manpower."
+ ce_swordsmith_guild_advance: "$ce_swordsmith_guild$"
+ ce_swordsmith_guild_advance_desc: "Our swordsmiths will prosper when their scattered workshops are united beneath a formal guild. Shared standards and access to metal will improve both the consistency and volume of their work. The resulting concentration of skilled labor increases local weapon production."
+
+ ce_master_swordsmith_guild_advance: "$ce_master_swordsmith_guild$"
+ ce_master_swordsmith_guild_advance_desc: "Our most accomplished smiths should direct larger workshops capable of training laborers and enforcing exacting standards. By granting these masters authority over the local craft, we can combine traditional skill with more organized production. Their expanded guilds will substantially increase the supply of weapons."
+ ce_armourers_guild_advance: "$ce_armourers_guild$"
+ ce_armourers_guild_advance_desc: "$ce_armourers_guild_desc$"
+ ce_grand_mercantile_exchange_advance: "$ce_grand_mercantile_exchange$"
+ ce_grand_mercantile_exchange_advance_desc: "$ce_grand_mercantile_exchange_desc$"

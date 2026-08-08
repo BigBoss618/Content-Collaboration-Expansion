@@ -1,0 +1,139 @@
+﻿a_ce_broken_lances = {
+	copy_from = a_age_1_traditions_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_broken_lances_2
+
+	construction_demand = ce_broken_lances_construction
+	maintenance_demand = ce_broken_lances_maintenance
+
+	buildable = yes
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_broken_lances_2 = {
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_lancers
+
+	construction_demand = ce_broken_lances_construction
+	maintenance_demand = ce_broken_lances_maintenance
+
+	buildable = yes
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_milanese_cavalry_militia = {
+	copy_from = a_age_1_traditions_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_milanese_cavalry_militia_2
+
+	strength_damage_done = 0.05
+
+	buildable = no
+	levy = yes
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_milanese_cavalry_militia_2 = {
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	is_special = yes
+
+	strength_damage_done = 0.05
+
+	buildable = no
+	levy = yes
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_famiglia_ducale_2 = {
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	is_special = yes
+	upgrades_to_only = a_ce_famiglia_ducale_3
+
+	buildable = yes
+
+	limit = {
+		value = {
+			value = 1
+			desc = "SUBUNIT_LIMIT_BASE"
+		}
+	}
+
+	strength_damage_taken = -0.5
+	strength_damage_done = 1
+	morale_damage_done = 1
+	initiative = 5
+
+	construction_demand = ce_famiglia_ducale_construction
+	maintenance_demand = ce_famiglia_ducale_maintenance
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_famiglia_ducale_3 = {
+	copy_from = a_age_3_discovery_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_heavy_lancers
+
+	buildable = yes
+
+	limit = {
+		value = {
+			value = 2
+			desc = "SUBUNIT_LIMIT_BASE"
+		}
+	}
+
+	strength_damage_taken = -0.5
+	strength_damage_done = 1
+	morale_damage_done = 1
+	initiative = 5
+
+	construction_demand = ce_famiglia_ducale_construction
+	maintenance_demand = ce_famiglia_ducale_maintenance
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_dismounted_broken_lances = {
+	copy_from = a_age_1_traditions_heavy_infantry
+	is_special = yes
+	upgrades_to_only = a_ce_dismounted_broken_lances_2
+
+	buildable = yes
+
+	strength_damage_taken = -0.10
+	secure_flanks_defense = 0.25
+
+	gfx_tags = { sword_tag heavy_tag }
+}
+
+a_ce_dismounted_broken_lances_2 = {
+	copy_from = a_age_2_renaissance_heavy_infantry
+	is_special = yes
+	upgrades_to_only = a_ce_dismounted_broken_lances_3
+
+	buildable = yes
+
+	strength_damage_taken = -0.10
+	secure_flanks_defense = 0.25
+
+	gfx_tags = { sword_tag heavy_tag }
+}
+
+a_ce_dismounted_broken_lances_3 = {
+	copy_from = a_age_3_discovery_heavy_infantry
+	is_special = yes
+	upgrades_to = a_pikemen
+
+	buildable = yes
+
+	strength_damage_taken = -0.10
+	secure_flanks_defense = 0.25
+
+	gfx_tags = { sword_tag heavy_tag }
+}

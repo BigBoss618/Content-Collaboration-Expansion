@@ -1,0 +1,107 @@
+﻿ce_broken_lances_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_unit = a_ce_broken_lances
+
+	requires = unlock_armored_horsemen_advance
+}
+
+ce_broken_lances_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_unit = a_ce_broken_lances_2
+
+	requires = unlock_heavy_cavalry_advance
+}
+
+ce_milanese_cavalry_militia_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_levy = levy_a_ce_milanese_cavalry_militia
+
+	requires = unlock_armored_horsemen_advance
+}
+
+ce_milanese_cavalry_militia_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_levy = levy_a_ce_milanese_cavalry_militia_2
+
+	requires = unlock_peasant_levy_advance
+}
+
+ce_famiglia_ducale_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_unit = a_ce_famiglia_ducale_2
+
+	requires = unlock_heavy_cavalry_advance
+}
+
+ce_famiglia_ducale_3_advance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_unit = a_ce_famiglia_ducale_3
+
+	requires = unlock_lancers_advance
+}
+
+ce_dismounted_broken_lances_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_unit = a_ce_dismounted_broken_lances
+
+	requires = unlock_footmen_advance
+}
+
+ce_dismounted_broken_lances_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_unit = a_ce_dismounted_broken_lances_2
+
+	requires = unlock_men_at_arms_advance
+}
+
+ce_dismounted_broken_lances_3_advance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = MLO
+	}
+
+	unlock_unit = a_ce_dismounted_broken_lances_3
+
+	requires = unlock_halberdiers_advance
+}

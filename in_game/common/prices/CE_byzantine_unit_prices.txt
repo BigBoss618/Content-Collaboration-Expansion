@@ -1,0 +1,38 @@
+﻿a_ce_byzantine_lancers_maintenance = {
+	# Additive adjustments to the heavy-cavalry bases of 1.5 gold and 0.04 manpower.
+	gold = -1
+	manpower = -0.02
+}
+
+a_ce_byzantine_lancers_build = {
+	# Additive adjustment to the heavy-cavalry base recruitment cost of 150 gold.
+	gold = -50
+}
+
+a_ce_byzantine_lancers_2_maintenance = {
+	gold = -1
+	manpower = -0.02
+}
+
+a_ce_byzantine_lancers_2_build = {
+	gold = -50
+}
+
+a_ce_byzantine_lancers_3_maintenance = {
+	gold = -1
+	manpower = -0.02
+}
+
+a_ce_byzantine_lancers_3_build = {
+	gold = -50
+}
+
+n_ce_dromon_build = {
+	# Additive adjustment to the galley base construction cost of 100 gold.
+	gold = -40
+}
+
+n_ce_dromon_maintenance = {
+	# Additive adjustment to the galley base maintenance cost of 0.5 gold.
+	gold = -0.35
+}

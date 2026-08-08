@@ -1,0 +1,42 @@
+﻿# Milan unit prices
+
+a_ce_famiglia_ducale_2_build = {
+	# Heavy cavalry has a base build price of 150 gold: 150 + 850 = 1,000.
+	gold = 850
+}
+
+a_ce_famiglia_ducale_2_maintenance = {
+	gold = 1.5
+}
+
+a_ce_famiglia_ducale_3_build = {
+	gold = 850
+}
+
+a_ce_famiglia_ducale_3_maintenance = {
+	gold = 1.5
+}
+
+a_ce_dismounted_broken_lances_build = {
+	gold = -20
+}
+
+a_ce_dismounted_broken_lances_maintenance = {
+	gold = 0.4
+}
+
+a_ce_dismounted_broken_lances_2_build = {
+	gold = -20
+}
+
+a_ce_dismounted_broken_lances_2_maintenance = {
+	gold = 0.4
+}
+
+a_ce_dismounted_broken_lances_3_build = {
+	gold = -12.5
+}
+
+a_ce_dismounted_broken_lances_3_maintenance = {
+	gold = 0.4
+}

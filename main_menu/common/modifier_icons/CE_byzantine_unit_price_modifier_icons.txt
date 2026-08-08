@@ -1,0 +1,31 @@
+﻿a_ce_byzantine_lancers_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_byzantine_lancers_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_byzantine_lancers_2_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_byzantine_lancers_2_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_byzantine_lancers_3_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_byzantine_lancers_3_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+n_ce_dromon_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/navy_galley_maintenance_cost_modifier.dds"
+}
+
+n_ce_dromon_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/navy_galley_maintenance_cost_modifier.dds"
+}

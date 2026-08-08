@@ -1,0 +1,345 @@
+﻿a_ce_byzantine_lancers = {
+	copy_from = a_age_1_traditions_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_byzantine_lancers_2
+
+	construction_demand = ce_byzantine_lancers_construction
+	maintenance_demand = ce_byzantine_lancers_maintenance
+
+	buildable = yes
+
+	morale_damage_done = 0.05
+	strength_damage_done = 0.05
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_latinikon = {
+	copy_from = a_age_1_traditions_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_latinikon_2
+
+	construction_demand = ce_latinikon_construction
+	maintenance_demand = ce_latinikon_maintenance
+
+	buildable = yes
+
+	strength_damage_done = 0.15
+	strength_damage_taken = -0.1
+
+	gfx_tags = { crusader_tag spear_tag heavy_tag }
+}
+
+a_ce_skythikon = {
+	copy_from = a_age_1_traditions_light_cavalry
+	is_special = yes
+	upgrades_to = a_ce_skythikon_2
+
+	construction_demand = ce_skythikon_construction
+	maintenance_demand = ce_skythikon_maintenance
+
+	buildable = yes
+
+	flanking_ability = 0.25
+	morale_damage_done = 0.1
+
+	impact = {
+		grasslands = 0.20
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_byzantine_guard_archers = {
+	copy_from = a_age_1_traditions_light_infantry
+	is_special = yes
+	upgrades_to = a_ce_byzantine_guard_archers_2
+
+	construction_demand = archer_infantry_construction
+	maintenance_demand = archer_infantry_maintenance
+
+	buildable = yes
+
+	strength_damage_done = 0.10
+	strength_damage_taken = -0.10
+
+	gfx_tags = { archer_tag medium_tag }
+}
+
+a_ce_trebizond_archers = {
+	copy_from = a_age_1_traditions_light_infantry
+	is_special = yes
+	upgrades_to = a_ce_trebizond_archers_2
+
+	construction_demand = archer_infantry_construction
+	maintenance_demand = archer_infantry_maintenance
+
+	buildable = yes
+
+	combat = {
+		hills = 0.25
+		coastal = 0.25
+		mountains = 0.25
+	}
+
+	location_potential = {
+		dominant_culture = culture:pontic_greek_culture
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_archontopoulai = {
+	copy_from = a_age_1_traditions_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_archontopoulai_2
+
+	construction_demand = ce_archontopoulai_construction
+	maintenance_demand = ce_archontopoulai_maintenance
+
+	buildable = yes
+
+	strenth_damage_done = 0.10
+
+	combat = {
+		grasslands = 0.10
+	}
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_mangonel = {
+	copy_from = a_age_1_traditions_artillery
+	is_special = yes
+	upgrades_to = a_ce_mangonel_2
+
+	construction_demand = ce_mangonel_construction
+	maintenance_demand = ce_mangonel_maintenance
+
+	buildable = yes
+	bombard = yes
+
+	bombard_efficiency = 0.25
+}
+
+a_ce_vardariotai = {
+	copy_from = a_age_1_traditions_light_cavalry
+	is_special = yes
+	upgrades_to = a_ce_vardariotai_2
+
+	construction_demand = ce_vardariotai_construction
+	maintenance_demand = ce_vardariotai_maintenance
+
+	buildable = yes
+
+	initiative = 2
+	movement_speed = 0.25
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_byzantine_lancers_2 = {
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_byzantine_lancers_3
+
+	construction_demand = ce_byzantine_lancers_construction
+	maintenance_demand = ce_byzantine_lancers_maintenance
+
+	buildable = yes
+
+	morale_damage_done = 0.05
+	strength_damage_done = 0.05
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_latinikon_2 = {
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_latinikon_3
+
+	construction_demand = ce_latinikon_construction
+	maintenance_demand = ce_latinikon_maintenance
+
+	buildable = yes
+
+	strength_damage_done = 0.15
+	strength_damage_taken = -0.1
+
+	gfx_tags = { crusader_tag spear_tag heavy_tag }
+}
+
+a_ce_skythikon_2 = {
+	copy_from = a_age_2_renaissance_light_cavalry
+	is_special = yes
+	upgrades_to = a_light_lancers
+
+	construction_demand = ce_skythikon_construction
+	maintenance_demand = ce_skythikon_maintenance
+
+	buildable = yes
+
+	flanking_ability = 0.25
+	morale_damage_done = 0.1
+
+	impact = {
+		grasslands = 0.20
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_byzantine_guard_archers_2 = {
+	copy_from = a_age_2_renaissance_light_infantry
+	is_special = yes
+	upgrades_to = a_early_arquebusiers
+
+	construction_demand = archer_infantry_construction
+	maintenance_demand = archer_infantry_maintenance
+
+	buildable = yes
+
+	strength_damage_done = 0.10
+	strength_damage_taken = -0.10
+
+	gfx_tags = { archer_tag medium_tag }
+}
+
+a_ce_trebizond_archers_2 = {
+	copy_from = a_age_2_renaissance_light_infantry
+	is_special = yes
+	upgrades_to = a_early_arquebusiers
+
+	construction_demand = archer_infantry_construction
+	maintenance_demand = archer_infantry_maintenance
+
+	buildable = yes
+
+	combat = {
+		hills = 0.25
+		coastal = 0.25
+		mountains = 0.25
+	}
+
+	location_potential = {
+		dominant_culture = culture:pontic_greek_culture
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_archontopoulai_2 = {
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_lancers
+
+	construction_demand = ce_archontopoulai_construction
+	maintenance_demand = ce_archontopoulai_maintenance
+
+	buildable = yes
+
+	strenth_damage_done = 0.10
+
+	combat = {
+		grasslands = 0.10
+	}
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_mangonel_2 = {
+	copy_from = a_age_2_renaissance_artillery
+	is_special = yes
+	upgrades_to = a_falconet
+
+	construction_demand = ce_mangonel_construction
+	maintenance_demand = ce_mangonel_maintenance
+
+	buildable = yes
+	bombard = yes
+
+	bombard_efficiency = 0.25
+}
+
+a_ce_vardariotai_2 = {
+	copy_from = a_age_2_renaissance_light_cavalry
+	is_special = yes
+	upgrades_to = a_light_lancers
+
+	construction_demand = ce_vardariotai_construction
+	maintenance_demand = ce_vardariotai_maintenance
+
+	buildable = yes
+
+	initiative = 2
+	movement_speed = 0.25
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_byzantine_lancers_3 = {
+	copy_from = a_age_3_discovery_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_heavy_lancers
+
+	construction_demand = ce_byzantine_lancers_construction
+	maintenance_demand = ce_byzantine_lancers_maintenance
+
+	buildable = yes
+
+	morale_damage_done = 0.05
+	strength_damage_done = 0.05
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_latinikon_3 = {
+	copy_from = a_age_3_discovery_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_heavy_lancers
+
+	construction_demand = ce_latinikon_construction
+	maintenance_demand = ce_latinikon_maintenance
+
+	buildable = yes
+
+	strength_damage_done = 0.15
+	strength_damage_taken = -0.1
+
+	gfx_tags = { crusader_tag spear_tag heavy_tag }
+}
+
+n_ce_dromon = {
+	copy_from = n_age_2_renaissance_galley
+	category = navy_galley
+	is_special = yes
+	upgrades_to = n_ce_lanternas
+
+	construction_demand = ce_dromon_construction
+	maintenance_demand = ce_dromon_maintenance
+
+	buildable = yes
+
+	transport_capacity = 0.95
+	maritime_presence = 0.06
+
+	gfx_tags = { mediterranean_galley_tag }
+}
+
+n_ce_lanternas = {
+	copy_from = n_age_3_discovery_galley
+	category = navy_galley
+	is_special = yes
+	upgrades_to = n_galleass
+
+	construction_demand = ce_lanternas_construction
+	maintenance_demand = ce_lanternas_maintenance
+
+	buildable = yes
+
+	cannons = 3
+	movement_speed = 1
+
+	gfx_tags = { mediterranean_galley_tag }
+}

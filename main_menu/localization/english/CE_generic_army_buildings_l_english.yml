@@ -1,0 +1,23 @@
+﻿l_english:
+
+ #Generic Army Buildings
+ ce_militia_drill_square: "Militia Drill Square"
+ ce_militia_drill_square_desc: "Men need drill to learn the discipline of combat because skill at arms is only half the story. Moving as one in battle means mutual support, and standing shoulder to shoulder with a comrade gives many men the courage to go forward. Drill is a practical matter too: it takes practice not to tangle up pikes, spears and the like when moving en masse."
+ ce_town_watch: "Town Watch"
+ ce_town_watch_desc: "The Town Watch is a combination of militia, thief-takers, linkboys, and patrolmen. Having a small barrack-house gives them somewhere to train and store their weapons and is a useful first step in creating a local military culture and keeping public order."
+ ce_militia_barracks: "Militia Barracks"
+ ce_militia_barracks_desc: "Training the citizenry-in-arms requires many facilities from a drill yard to an armourers and weapon makers. A militia barracks brings all of these resources together under one roof and under the command of a full-time staff of old soldiers, veterans who can pass on their skills in an orderly way."
+ ce_town_guard: "Town Guard"
+ ce_town_guard_desc: "A Town Guard barracks is often a mark of prosperity as the locals show some civic pride by looking to their own defences. Here the young men of a town can be given basic training in the use of arms, taught to obey a few simple orders, and given some sense of military worth."
+ ce_city_watch: "City Watch"
+ ce_city_watch_desc: "The City Watch barracks is a centre for pursuits worthy of true soldiers, a place for exercises, drill and weapons practice. Those who would style themselves gentlemen can train here without loss of social status. The lower citizens can be taught the rudiments of drill too, and given better weapons from the attached armoury."
+ ce_stables: "Stables"
+ ce_stables_desc: "There is much more to fielding elite cavalry than simply housing a large number of horses. With quarters for mounts, troops, and veteran officers, these stables form a self-contained cavalry school devoted to mastering all things equine. For many realms, such an institution represents the greatest investment required to gain access to their finest mounted warriors."
+ ce_swordsmith_guild: "Swordsmith Guild"
+ ce_swordsmith_guild_desc: "A Swordsmith Guild gathers skilled metalworkers, sharpeners, hilt-makers, and apprentices under a common charter. Its workshops regulate quality, share hard-won techniques, and secure steady supplies of metal and tools. The concentration of expertise allows local weapon makers to produce finer blades in greater quantities."
+ ce_master_swordsmith_guild: "Master Swordsmith Guild"
+ ce_master_swordsmith_guild_desc: "The finest swordsmiths command extensive workshops staffed by experienced laborers and promising apprentices. Carefully selected metals, specialized tools, and exacting standards allow every stage of production to be supervised by recognized masters. Their guild becomes the centre of the local arms trade and greatly increases the output of weaponry."
+ ce_armourers_guild: "Armourers' Guild"
+ ce_armourers_guild_desc: "An ordinary smith may spend much of the day repairing civilian tools, but the members of the Armourers' Guild are military specialists. Their great capital workshops possess the skill, labor, and organization required to produce demanding forms of protection such as mail, whose countless rings must each be joined to its neighbours. By enforcing exacting standards and supplying reliable equipment throughout the realm, the guild helps our soldiers endure the violence of battle."
+ ce_grand_mercantile_exchange: "Grand Mercantile Exchange"
+ ce_grand_mercantile_exchange_desc: "When commerce flourishes in the capital, its leading traders establish a Grand Mercantile Exchange to realize the city's extraordinary potential. Its imposing hall serves as the administrative centre of regional trade, where educated clerks coordinate ventures and exploit far-reaching commercial connections. These networks increase mercantile capacity and allow the capital's burghers to conduct far more business."

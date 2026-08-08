@@ -1,0 +1,39 @@
+﻿a_ce_famiglia_ducale_2_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_famiglia_ducale_2_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_famiglia_ducale_3_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_famiglia_ducale_3_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_cavalry_maintenance_cost_modifier.dds"
+}
+
+a_ce_dismounted_broken_lances_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_infantry_maintenance_cost_modifier.dds"
+}
+
+a_ce_dismounted_broken_lances_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_infantry_maintenance_cost_modifier.dds"
+}
+
+a_ce_dismounted_broken_lances_2_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_infantry_maintenance_cost_modifier.dds"
+}
+
+a_ce_dismounted_broken_lances_2_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_infantry_maintenance_cost_modifier.dds"
+}
+
+a_ce_dismounted_broken_lances_3_build_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_infantry_maintenance_cost_modifier.dds"
+}
+
+a_ce_dismounted_broken_lances_3_maintenance_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/army_infantry_maintenance_cost_modifier.dds"
+}

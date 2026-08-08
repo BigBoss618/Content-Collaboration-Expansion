@@ -1,0 +1,239 @@
+ce_archontopoulai_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_archontopoulai
+
+	requires = unlock_armored_horsemen_advance
+}
+
+ce_byzantine_guard_archers_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_byzantine_guard_archers
+
+	requires = unlock_archers_advance
+}
+
+ce_byzantine_lancers_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_byzantine_lancers
+
+	requires = unlock_armored_horsemen_advance
+}
+
+ce_latinikon_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_latinikon
+
+	requires = unlock_armored_horsemen_advance
+}
+
+ce_mangonel_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_mangonel
+
+	requires = ship_building_advance
+}
+
+ce_skythikon_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_skythikon
+
+	requires = unlock_horsemen_advance
+}
+
+ce_trebizond_archers_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_trebizond_archers
+
+	requires = unlock_archers_advance
+}
+
+ce_vardariotai_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_vardariotai
+
+	requires = unlock_horsemen_advance
+}
+
+ce_archontopoulai_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_archontopoulai_2
+
+	requires = unlock_heavy_cavalry_advance
+}
+
+ce_byzantine_guard_archers_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_byzantine_guard_archers_2
+
+	requires = unlock_crossbowmen_advance
+}
+
+ce_byzantine_lancers_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_byzantine_lancers_2
+
+	requires = unlock_heavy_cavalry_advance
+}
+
+ce_dromon_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = n_ce_dromon
+
+	requires = unlock_m_galley_advance
+}
+
+ce_latinikon_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_latinikon_2
+
+	requires = unlock_heavy_cavalry_advance
+}
+
+ce_mangonel_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_mangonel_2
+
+	requires = unlock_houfnice_advance
+}
+
+ce_skythikon_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_skythikon_2
+
+	requires = unlock_cavalry_advance
+}
+
+ce_trebizond_archers_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_trebizond_archers_2
+
+	requires = unlock_crossbowmen_advance
+}
+
+ce_vardariotai_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_vardariotai_2
+
+	requires = unlock_cavalry_advance
+}
+
+ce_byzantine_lancers_3_advance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_byzantine_lancers_3
+
+	requires = unlock_lancers_advance
+}
+
+ce_lanternas_advance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = n_ce_lanternas
+
+	requires = unlock_war_galley_advance
+}
+
+ce_latinikon_3_advance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = BYZ
+	}
+
+	unlock_unit = a_ce_latinikon_3
+
+	requires = unlock_lancers_advance
+}

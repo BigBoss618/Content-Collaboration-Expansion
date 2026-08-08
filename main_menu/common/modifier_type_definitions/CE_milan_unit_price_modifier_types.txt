@@ -1,0 +1,79 @@
+﻿a_ce_famiglia_ducale_2_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_famiglia_ducale_2_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_famiglia_ducale_3_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_famiglia_ducale_3_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_dismounted_broken_lances_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_dismounted_broken_lances_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_dismounted_broken_lances_2_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_dismounted_broken_lances_2_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_dismounted_broken_lances_3_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_dismounted_broken_lances_3_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}

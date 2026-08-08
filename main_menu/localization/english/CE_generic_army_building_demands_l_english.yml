@@ -1,0 +1,25 @@
+﻿l_english:
+
+ ce_militia_drill_square_maintenance: "Militia Drill Square Upkeep"
+ ce_town_watch_maintenance: "Town Watch Upkeep"
+ ce_militia_barracks_maintenance: "Militia Barracks Upkeep"
+ ce_town_guard_maintenance: "Town Guard Upkeep"
+ ce_city_watch_maintenance: "City Watch Upkeep"
+
+ ce_militia_drill_square_construction: "Constructing Militia Drill Squares"
+ ce_town_watch_construction: "Constructing Town Watches"
+ ce_militia_barracks_construction: "Constructing Militia Barracks"
+ ce_town_guard_construction: "Constructing Town Guard Barracks"
+ ce_city_watch_construction: "Constructing City Watch Barracks"
+ ce_stables_maintenance: "Stables Upkeep"
+ ce_swordsmith_guild_maintenance: "Swordsmith Guild Upkeep"
+ ce_master_swordsmith_guild_maintenance: "Master Swordsmith Guild Upkeep"
+
+ ce_stables_construction: "Constructing Stables"
+ ce_swordsmith_guild_construction: "Constructing Swordsmith Guilds"
+ ce_master_swordsmith_guild_construction: "Constructing Master Swordsmith Guilds"
+ ce_armourers_guild_maintenance: "Armourers' Guild Upkeep"
+ ce_grand_mercantile_exchange_maintenance: "Grand Mercantile Exchange Upkeep"
+
+ ce_armourers_guild_construction: "Constructing the Armourers' Guild"
+ ce_grand_mercantile_exchange_construction: "Constructing the Grand Mercantile Exchange"

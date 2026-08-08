@@ -1,0 +1,99 @@
+﻿ce_militia_drill_square_construction = {
+	leather = 0.4
+	lumber = 1
+	masonry = 0.2
+	tools = 0.25
+	weaponry = 0.75
+
+	category = building_construction
+}
+
+ce_town_watch_construction = {
+	leather = 0.4
+	lumber = 0.8
+	masonry = 0.6
+	paper = 0.15
+	weaponry = 0.5
+
+	category = building_construction
+}
+
+ce_militia_barracks_construction = {
+	leather = 0.75
+	lumber = 1
+	masonry = 1
+	tools = 0.5
+	weaponry = 1
+
+	category = building_construction
+}
+
+ce_town_guard_construction = {
+	leather = 0.5
+	lumber = 0.8
+	masonry = 1.2
+	paper = 0.2
+	tools = 0.4
+	weaponry = 0.8
+
+	category = building_construction
+}
+
+ce_city_watch_construction = {
+	firearms = 0.5
+	leather = 0.75
+	lumber = 1
+	masonry = 1.5
+	paper = 0.25
+	tools = 0.5
+	weaponry = 1
+
+	category = building_construction
+}
+
+ce_stables_construction = {
+	leather = 0.25
+	lumber = 1.25
+	masonry = 0.40
+	tools = 0.25
+
+	category = building_construction
+}
+
+ce_swordsmith_guild_construction = {
+	iron = 0.30
+	lumber = 0.60
+	masonry = 0.50
+	tools = 0.40
+
+	category = building_construction
+}
+
+ce_master_swordsmith_guild_construction = {
+	iron = 0.60
+	lumber = 0.80
+	masonry = 1.00
+	tools = 0.75
+
+	category = building_construction
+}
+
+ce_armourers_guild_construction = {
+	coal = 1.50
+	copper = 1.00
+	iron = 4.00
+	masonry = 2.00
+	tools = 3.00
+
+	category = building_construction
+}
+
+ce_grand_mercantile_exchange_construction = {
+	fine_cloth = 0.75
+	lumber = 1.50
+	masonry = 2.50
+	paper = 1.00
+	tools = 0.75
+
+	category = building_construction
+}

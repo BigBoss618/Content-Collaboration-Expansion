@@ -1,0 +1,35 @@
+﻿ce_broken_lances_construction = {
+	horses = 2.0
+	leather = 0.4
+	weaponry = 0.8
+	fine_cloth = 0.2
+
+	category = regiment_construction
+}
+
+ce_broken_lances_maintenance = {
+	horses = 1.0
+	leather = 0.1
+	weaponry = 0.3
+	fine_cloth = 0.1
+
+	category = regiment_maintenance
+}
+
+ce_famiglia_ducale_construction = {
+	horses = 2.5
+	weaponry = 1.0
+	tools = 0.6
+	fine_cloth = 0.5
+
+	category = regiment_construction
+}
+
+ce_famiglia_ducale_maintenance = {
+	horses = 1.2
+	weaponry = 0.4
+	tools = 0.2
+	fine_cloth = 0.3
+
+	category = regiment_maintenance
+}

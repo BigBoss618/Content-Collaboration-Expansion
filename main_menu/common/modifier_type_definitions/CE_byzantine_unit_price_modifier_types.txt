@@ -1,0 +1,63 @@
+﻿a_ce_byzantine_lancers_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_byzantine_lancers_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_byzantine_lancers_2_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_byzantine_lancers_2_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_byzantine_lancers_3_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+a_ce_byzantine_lancers_3_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+n_ce_dromon_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+n_ce_dromon_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}

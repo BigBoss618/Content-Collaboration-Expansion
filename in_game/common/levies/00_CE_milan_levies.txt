@@ -1,0 +1,26 @@
+# Specialized levy definitions must load before the generic levy pool.
+levy_a_ce_milanese_cavalry_militia_2 = {
+	size = 0.05
+
+	country_allow = {
+		has_or_had_tag = MLO
+	}
+
+	allowed_pop_type = burghers
+	allowed_pop_type = nobles
+
+	unit = a_ce_milanese_cavalry_militia_2
+}
+
+levy_a_ce_milanese_cavalry_militia = {
+	size = 0.05
+
+	country_allow = {
+		has_or_had_tag = MLO
+	}
+
+	allowed_pop_type = burghers
+	allowed_pop_type = nobles
+
+	unit = a_ce_milanese_cavalry_militia
+}
