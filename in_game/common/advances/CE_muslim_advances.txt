@@ -47,3 +47,53 @@ ce_lamtuna_spearmen_advance = {
 
 	requires = unlock_footmen_advance
 }
+
+ce_nubian_spearmen_advance = {
+	age = age_1_traditions
+
+	potential = {
+		OR = {
+			culture = culture:lower_egyptian_culture
+			culture = culture:upper_egyptian_culture
+			culture = culture:levantine_culture
+			culture = culture:syriac_culture
+			culture = { has_culture_group = culture_group:maghrebi_group }
+			culture = { has_culture_group = culture_group:amazigh_group }
+		}
+	}
+
+	unlock_unit = a_ce_nubian_spearmen
+
+	requires = unlock_footmen_advance
+}
+
+ce_nubian_spearmen_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		OR = {
+			culture = culture:lower_egyptian_culture
+			culture = culture:upper_egyptian_culture
+			culture = culture:levantine_culture
+			culture = culture:syriac_culture
+			culture = { has_culture_group = culture_group:maghrebi_group }
+			culture = { has_culture_group = culture_group:amazigh_group }
+		}
+	}
+
+	unlock_unit = a_ce_nubian_spearmen_2
+
+	requires = unlock_men_at_arms_advance
+}
+
+ce_baghlah_advance = {
+	age = age_1_traditions
+
+	potential = {
+		religion.group = religion_group:muslim
+	}
+
+	unlock_unit = n_ce_baghlah
+
+	requires = unlock_dhow
+}

@@ -44,11 +44,48 @@ a_ce_lamtuna_spearmen = {
 
 	buildable = yes
 
-	# A disciplined spear wall is difficult to envelop, but its light armour
-	# leaves it vulnerable once the formation is broken or exposed to missiles.
-	secure_flanks_defense = 0.025
-	combat_speed = -0.10
-	strength_damage_taken = 0.05
+	combat_speed = 0.25
+	frontage = -0.5
 
 	gfx_tags = { spear_tag light_tag }
+}
+
+a_ce_nubian_spearmen = {
+	copy_from = a_age_1_traditions_heavy_infantry
+	is_special = yes
+	upgrades_to = a_ce_nubian_spearmen_2
+
+	buildable = yes
+
+	secure_flanks_defense = 0.25
+	strength_damage_taken = -0.05
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_nubian_spearmen_2 = {
+	copy_from = a_age_2_renaissance_heavy_infantry
+	is_special = yes
+	upgrades_to = a_halberdiers
+
+	buildable = yes
+
+	secure_flanks_defense = 0.25
+	strength_damage_taken = -0.05
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+n_ce_baghlah = {
+	copy_from = n_age_1_traditions_transport
+	category = navy_transport
+	is_special = yes
+	upgrades_to = n_hulk
+
+	buildable = yes
+
+	# Large ocean-going cargo hull with extra provisions and defensive swivel guns.
+	transport_capacity = 0.25
+	food_storage_per_strength = 15
+	cannons = 2
 }

@@ -1,1 +1,189 @@
 ﻿
+a_ce_royal_banderium = {
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_ce_royal_banderium_3
+
+
+	buildable = yes
+
+	max_strength = 0.1
+
+	gfx_tags = { heavy_tag }
+}
+
+a_ce_royal_banderium_3 = {
+	copy_from = a_age_3_discovery_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_heavy_lancers
+
+	buildable = yes
+
+	max_strength = 0.2
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_ce_croat_axemen = {
+	copy_from = a_age_1_traditions_light_infantry
+	is_special = yes
+	upgrades_to = a_ce_croat_axemen_2
+
+	buildable = yes
+
+	movement_speed = 0.25
+	flanking_ability = 0.25
+	strength_damage_done = 0.05
+
+	combat = {
+		hills = 0.15
+		mountains = 0.10
+		forest = 0.10
+	}
+
+	gfx_tags = { axe_tag light_tag }
+}
+
+a_ce_croat_axemen_2 = {
+	copy_from = a_age_2_renaissance_light_infantry
+	is_special = yes
+	upgrades_to = a_early_arquebusiers
+
+	buildable = yes
+
+	movement_speed = 0.25
+	flanking_ability = 0.25
+	strength_damage_done = 0.05
+
+	combat = {
+		hills = 0.15
+		mountains = 0.10
+		forest = 0.10
+	}
+
+	gfx_tags = { axe_tag light_tag }
+}
+
+a_ce_magyar_cavalry = {
+	copy_from = a_age_1_traditions_light_cavalry
+	is_special = yes
+	upgrades_to = a_ce_magyar_cavalry_2
+
+	maintenance_demand = steppe_horse_archers_maintenance
+	construction_demand = steppe_horse_archers_construction
+
+	buildable = yes
+
+	movement_speed = 1
+	initiative = 1
+
+	combat = {
+		grasslands = 0.1
+		sparse = 0.1
+		inland = 0.05
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_magyar_cavalry_2 = {
+	copy_from = a_age_2_renaissance_light_cavalry
+	is_special = yes
+	upgrades_to = a_ce_magyar_cavalry_3
+
+	maintenance_demand = steppe_horse_archers_maintenance
+	construction_demand = steppe_horse_archers_construction
+
+	buildable = yes
+
+	movement_speed = 1
+	initiative = 1
+
+	combat = {
+		grasslands = 0.1
+		sparse = 0.1
+		inland = 0.05
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_magyar_cavalry_3 = {
+	copy_from = a_age_3_discovery_light_cavalry
+	is_special = yes
+	upgrades_to = a_pistoleers
+
+	maintenance_demand = steppe_horse_archers_maintenance
+	construction_demand = steppe_horse_archers_construction
+
+	buildable = yes
+
+	movement_speed = 1
+	initiative = 1
+
+	combat = {
+		grasslands = 0.1
+		sparse = 0.1
+		inland = 0.05
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_bosnian_archers = {
+	copy_from = a_age_1_traditions_auxiliary
+	is_special = yes
+	upgrades_to = a_ce_bosnian_archers_2
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	buildable = yes
+
+	strength_damage_taken = -0.2
+
+	combat = {
+		hills = 0.10
+		forest = 0.10
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_bosnian_archers_2 = {
+	copy_from = a_age_2_renaissance_auxiliary
+	is_special = yes
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	buildable = yes
+
+	strength_damage_taken = -0.2
+
+	combat = {
+		hills = 0.10
+		forest = 0.10
+	}
+
+	gfx_tags = { archer_tag light_tag }
+}
+
+a_ce_peasant_archers = {
+	copy_from = a_age_1_traditions_auxiliary
+	is_special = yes
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	buildable = no
+	levy = yes
+
+	initiative = -2
+	combat_speed = -0.25
+	strength_damage_done = -0.20
+	strength_damage_taken = 0.10
+	morale_damage_taken = 0.25
+
+	gfx_tags = { archer_tag light_tag }
+}

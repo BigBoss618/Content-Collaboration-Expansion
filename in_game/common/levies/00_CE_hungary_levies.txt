@@ -1,0 +1,12 @@
+# Specialized Hungarian levy definitions load before the generic levy pool.
+levy_a_ce_peasant_archers = {
+	size = levy_generic_infantry_size
+
+	country_allow = {
+		has_or_had_tag = HUN
+	}
+
+	allowed_pop_type = peasants
+
+	unit = a_ce_peasant_archers
+}

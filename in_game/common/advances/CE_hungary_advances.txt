@@ -1,1 +1,120 @@
 ﻿
+ce_royal_banderium_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_royal_banderium
+
+	requires = unlock_heavy_cavalry_advance
+}
+
+ce_royal_banderium_3_advance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_royal_banderium_3
+
+	requires = unlock_lancers_advance
+}
+
+ce_croat_axemen_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_croat_axemen
+
+	requires = unlock_footmen_advance
+}
+
+ce_croat_axemen_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_croat_axemen_2
+
+	requires = unlock_men_at_arms_advance
+}
+
+ce_magyar_cavalry_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_magyar_cavalry
+
+	requires = unlock_horsemen_advance
+}
+
+ce_magyar_cavalry_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_magyar_cavalry_2
+
+	requires = unlock_cavalry_advance
+}
+
+ce_magyar_cavalry_3_advance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_magyar_cavalry_3
+
+	requires = unlock_light_lancers_advance
+}
+
+ce_bosnian_archers_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_bosnian_archers
+
+	requires = unlock_archers_advance
+}
+
+ce_bosnian_archers_2_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_unit = a_ce_bosnian_archers_2
+
+	requires = unlock_crossbowmen_advance
+}
+
+ce_peasant_archers_advance = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = HUN
+	}
+
+	unlock_levy = levy_a_ce_peasant_archers
+
+	requires = unlock_archers_advance
+}
