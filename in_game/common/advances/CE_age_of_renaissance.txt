@@ -5,3 +5,21 @@
 
 	requires = armory_advance
 }
+REPLACE:unlock_hulk_advance = {
+	age = age_2_renaissance
+
+	requires = dock_advance
+
+	unlock_unit = n_hulk
+}
+REPLACE:slave_center_advance = {
+	age = age_2_renaissance
+	unlock_building = slave_center
+	requires = trade_range_advance_age_2
+}
+REPLACE:unlock_peasant_levy_advance = {
+	age = age_2_renaissance
+	unlock_levy = levy_a_peasant_levy
+
+	requires = armory_advance
+}
