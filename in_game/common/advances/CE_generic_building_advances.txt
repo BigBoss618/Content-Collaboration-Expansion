@@ -157,3 +157,12 @@ ce_grand_mercantile_exchange_advance = {
 
 	requires = guilds
 }
+
+ce_royal_arsenal_advance = {
+	age = age_3_discovery
+	icon = ce_royal_arsenal
+
+	unlock_building = ce_royal_arsenal
+
+	requires = matchlock_gun
+}

@@ -343,3 +343,25 @@ ce_grand_mercantile_exchange = {
 
 	custom_tags = { guild }
 }
+
+ce_royal_arsenal = {
+	audio_tier = 3
+	icon = ce_royal_arsenal
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = ce_age_3_military_building_employment
+
+	city = yes
+	megalopolis = yes
+
+	important_for_AI = yes
+	expensive = yes
+	build_time = large_capital_build_time
+
+	construction_demand = local_governor_construction
+}

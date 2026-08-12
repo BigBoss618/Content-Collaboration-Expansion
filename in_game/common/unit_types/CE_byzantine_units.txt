@@ -117,6 +117,7 @@ a_ce_mangonel = {
 	maintenance_demand = ce_mangonel_maintenance
 
 	buildable = yes
+	bombard = yes
 	bombard_efficiency = 0.25
 }
 
@@ -255,6 +256,7 @@ a_ce_mangonel_2 = {
 	maintenance_demand = ce_mangonel_maintenance
 
 	buildable = yes
+	bombard = yes
 	bombard_efficiency = 0.25
 }
 

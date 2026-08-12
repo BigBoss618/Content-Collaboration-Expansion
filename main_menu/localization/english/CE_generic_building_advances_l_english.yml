@@ -24,3 +24,5 @@
  ce_armourers_guild_advance_desc: "$ce_armourers_guild_desc$"
  ce_grand_mercantile_exchange_advance: "$ce_grand_mercantile_exchange$"
  ce_grand_mercantile_exchange_advance_desc: "$ce_grand_mercantile_exchange_desc$"
+ ce_royal_arsenal_advance: "$ce_royal_arsenal$"
+ ce_royal_arsenal_advance_desc: "$ce_royal_arsenal_desc$"
