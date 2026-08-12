@@ -1,4 +1,4 @@
-REPLACE:unlock_cavalry_advance = {
+﻿REPLACE:unlock_cavalry_advance = {
 	age = age_2_renaissance
 	unlock_unit = a_cavalrymen
 	
