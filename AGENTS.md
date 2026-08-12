@@ -18,10 +18,12 @@ CCE expands EU5's historical content variety: country- and culture-flavoured uni
 
 1. Inspect the live CCE definition, comparable vanilla objects, and the installed game version before editing.
 2. Use the installed `eu5-mod-compatibility` skill for every EU5 scripting task.
-3. Use `eu5-add-modifier-type` whenever a custom price or modifier causes or could cause a generated `*_cost_modifier` entry.
-4. Use the `imagegen` skill for new raster illustrations or icons and follow its EU5 packaging instructions.
-5. Preserve unrelated user changes in the dirty worktree. Do not push, publish, or destructively reset without an explicit request.
-6. Validate brace balance, references, duplicate keys, encodings, and asset headers before finishing.
+3. Use `eu5-add-advance` whenever creating, replacing, retiring, repairing, or reviewing advances or their localization.
+4. Use `eu5-add-unit` whenever creating, changing, or reviewing regular units, ships, militia, levies, unit demands, prices, upgrades, or unit art.
+5. Use `eu5-add-modifier-type` whenever a custom price or modifier causes or could cause a generated `*_cost_modifier` entry.
+6. Use the `imagegen` skill for new raster illustrations or icons and follow its EU5 packaging instructions.
+7. Preserve unrelated user changes in the dirty worktree. Do not push, publish, or destructively reset without an explicit request.
+8. Validate brace balance, references, duplicate keys, encodings, and asset headers before finishing.
 
 ## Scripting conventions
 
@@ -29,7 +31,14 @@ CCE expands EU5's historical content variety: country- and culture-flavoured uni
 - Prefer unique `CE_*.txt` filenames and new `ce_`, `a_ce_`, `n_ce_`, or `levy_a_ce_` keys.
 - New database objects use ordinary definitions. Use `INJECT`, `REPLACE`, or their variants only when deliberately modifying an existing key according to the compatibility skill.
 - An advance may never require an advance from another age.
+- Every non-root advance has exactly one graphical parent through `requires`; the parent must load before the child. Intentional roots omit `requires` and use `depth = 0`.
+- Advances without `requires` may be semi-randomly placed. Use `allow_children = no` for deliberate leaves, and never make another advance require such a leaf.
+- Additional logical prerequisites may use `allow = { has_advance = other_advance }`, but they do not create additional tree edges.
 - When choosing prerequisites for widely available custom advances, scan only the corresponding vanilla `0_age_of_<age>.txt` file. For a unit advance that must follow its vanilla unit family, verify the same-age vanilla unit-unlock advance as well. Vary sensible prerequisite sources instead of attaching everything to one node.
+- Treat referenced vanilla advance keys as compatibility anchors. Prefer a complete `REPLACE:old_advance = { ... }` redesign under the original key, plus replacement localization, over deleting or hiding the key.
+- Peter may suppress an advance through a complete replacement containing `potential = { always = no }` only after an exact-key search of the installed base game, all installed DLC, and CCE finds no functional reference outside the advance's own definition. Localization and same-named art do not count as functional references.
+- Do not suppress or omit an advance used by culture, country, government, religion, DLC, or `for = adm/dip/mil` advances, or by triggers, effects, setup, AI, events, missions, or other scripts. Preserve and redesign the key or deliberately migrate every dependency.
+- Physically omit a key from an exact-path full-file replacement only under the same no-dependencies condition or after all references have been migrated. Full-file replacement is broad and conflicts with other mods replacing the same file.
 - Country-specific advances should normally use `potential = { has_or_had_tag = TAG }` unless the design specifies culture, religion, or another scope.
 - Localize unit advances through the unit: `advance: "$unit_key$"` and `advance_desc: "$unit_key_desc$"`.
 - Later-age unit variants need progression in their displayed names (for example Late, Renaissance, Veteran, or another appropriate term). Reuse descriptions through `$earlier_key_desc$` when requested.

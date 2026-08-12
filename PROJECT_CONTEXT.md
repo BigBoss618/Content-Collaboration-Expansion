@@ -76,17 +76,102 @@ The buildings include age progression, settlement restrictions, employment, prod
 Project-relevant installed skills at the last audit:
 
 - `eu5-mod-compatibility`: database entry modes, load order, folder exceptions, localization overrides, and compatibility review. Use for every EU5 scripting task.
+- `eu5-add-advance`: creates, replaces, retires, repairs, and validates advances, full age-tree rewrites, prerequisites, unlocks, localization, AI bias, research costs, and icon behavior.
+- `eu5-add-unit`: creates and validates regular units, ships, militia and levies, including variants, unlock advances, demands, prices, upgrades, localization, illustrations, and masks.
 - `eu5-add-modifier-type`: creates or repairs modifier-type definitions, modifier icon mappings, and NAME/DESC localization, especially for custom prices and `Missing modifier type` logs.
 - `imagegen`: generates and packages raster unit illustrations, masks, and icons. Its EU5 unit helper produces the current DXT1/mipmap contract.
 - `skill-creator`: available to formalize more of this accumulated workflow into reusable installed skills.
 
-The Advances instructions originally supplied as pasted text are not currently listed as an installed skill. Their durable rules have partly been captured in `AGENTS.md`, but a dedicated `eu5-add-advance` skill would still be worthwhile.
+The original pasted Advances instructions and later verified wiki/game findings are now incorporated into the installed `eu5-add-advance` skill. The installed game remains authoritative because the EU5 Advance Modding wiki is marked as last verified for version 1.0.
+
+## Advance-tree redesign and retirement policy
+
+CCE is preparing to rework the basic common advances in the Age of Renaissance. These are the broadly available entries in `0_age_of_renaissance.txt`, not advances gated by tags, cultures, governments, religions, country types, or the `adm`/`dip`/`mil` age preference unless explicitly brought into scope.
+
+### Tree mechanics
+
+- Every advance requires an `age`.
+- A non-root advance supports one graphical parent through a single `requires` field.
+- The required parent must be defined and loaded before the child.
+- An intentional root omits `requires` and uses `depth = 0`; an otherwise unparented advance may be placed semi-randomly.
+- `allow_children = no` marks a deliberate leaf, prevents random children, and exposes an explicit child reference as an error.
+- Extra logical prerequisites can be placed in `allow`, commonly with `has_advance`, but do not create another graphical tree edge.
+- CCE does not create cross-age `requires` relationships.
+- Ordinary common content must not require a `for = adm`, `dip`, or `mil` choice advance, because countries selecting another preference could never reach it.
+
+### Preferred approach: replace the concept, preserve the key
+
+Treat a vanilla advance key as an interface used by other content. When anything references it, retain the key and replace the complete definition with the redesigned concept:
+
+```txt
+# Old vanilla concept:
+# old_advance = {
+# 	age = age_2_renaissance
+# 	requires = renaissance_advance
+# 	old_modifier = 0.10
+# }
+
+REPLACE:old_advance = {
+	age = age_2_renaissance
+	icon = verified_new_icon
+
+	requires = verified_new_parent
+
+	new_modifier = 0.10
+}
+```
+
+Override `old_advance` and `old_advance_desc` in `main_menu/localization/english/replace/`. This removes the old concept from the player-facing tree while preserving compatibility for culture, country, government, religion, DLC, age-choice, event, setup, save, and other scripts that still refer to the identifier.
+
+### Peter's unused-key suppression exception
+
+Peter may suppress a vanilla advance only after an exact-key search across the complete installed base game, every installed DLC, and CCE finds no functional reference outside its own definition. Its localization and a same-named icon are not functional dependencies.
+
+Use a complete valid replacement rather than a partial injection:
+
+```txt
+REPLACE:unused_old_advance = {
+	age = age_2_renaissance
+	allow_children = no
+
+	potential = {
+		always = no
+	}
+}
+```
+
+This hides the advance; it does not delete the database key. Do not use this exception if any of the following reference the key:
+
+- another advance's `requires`, including a tag, culture, culture-group, government, religion, DLC, or `for = adm/dip/mil` advance;
+- `has_advance`, `has_advance_available`, `can_research_advance`, or `advance_type:<key>`;
+- `research_advance` or another scripted effect;
+- setup or starting research, AI preferences, events, missions, scripted triggers/effects, unlock logic, or another database.
+
+If a functional dependency exists, keep the original key as a redesigned working node or migrate every dependency to a verified same-age replacement before suppressing it.
+
+### Physical omission and full-file replacement
+
+EU5 does not currently document an object-level `DELETE:<key>` operation for advances. A mod file with the exact vanilla relative path and filename replaces the complete vanilla file, so omitting a key from a CCE `in_game/common/advances/0_age_of_renaissance.txt` makes that vanilla file contribution absent.
+
+Apply the same dependency audit before physical omission. Reparent or replace every child and rewrite every scripted reference first. A full-file replacement gives complete control over the common Renaissance tree but is intentionally broad: another mod replacing the same relative file will conflict according to playset order.
+
+For each advance considered for retirement, record one of three outcomes:
+
+1. **Preserve and redesign the key** — default when any dependency exists.
+2. **Suppress with `always = no`** — Peter's exception for a proven unused key.
+3. **Physically omit and migrate references** — only after a complete dependency rewrite or proof that none exist.
+
+Reference: https://eu5.paradoxwikis.com/Advance_modding
 
 ## Important learned rules
 
 - Do not create cross-age `requires` links between advances.
+- Give each non-root advance exactly one earlier-loaded graphical parent; use `depth = 0` for roots and `allow_children = no` for deliberate leaves.
 - For widely available advances, inspect the matching vanilla `0_age_of_<age>.txt` file and choose varied, sensible same-age prerequisites.
 - Unit-unlock advances should usually follow the vanilla unlock for the same category and era.
+- Preserve referenced vanilla advance keys as compatibility anchors and redesign them with complete `REPLACE` definitions.
+- Allow Peter to suppress an advance with `potential = { always = no }` only after a full exact-key audit proves the key has no functional use anywhere in the base game, installed DLC, or CCE.
+- Before suppressing, renaming, or omitting an advance, audit `requires`, `has_advance`, `has_advance_available`, `can_research_advance`, `advance_type:`, `research_advance`, setup, AI, events, missions, and other database references.
 - New content uses new keys; do not use `INJECT` or `REPLACE` by habit.
 - Unit modifiers are direct fields, not a `modifiers = {}` container.
 - Use no more than four goods in each custom unit construction or maintenance demand.
