@@ -2,13 +2,6 @@
 	age = age_1_traditions
 	icon = ce_militia_drill_square
 
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
-
 	unlock_building = ce_militia_drill_square
 
 	requires = faster_levy_recruitment
@@ -17,13 +10,6 @@
 ce_town_watch_advance = {
 	age = age_1_traditions
 	#icon = ce_town_watch
-
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
 
 	unlock_building = ce_town_watch
 
@@ -34,13 +20,6 @@ ce_militia_barracks_advance = {
 	age = age_2_renaissance
 	icon = ce_militia_barracks
 
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
-
 	unlock_building = ce_militia_barracks
 
 	requires = drill_army_advance
@@ -49,13 +28,6 @@ ce_militia_barracks_advance = {
 ce_town_guard_advance = {
 	age = age_2_renaissance
 	icon = ce_town_guard
-
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
 
 	unlock_building = ce_town_guard
 
@@ -66,13 +38,6 @@ ce_city_watch_advance = {
 	age = age_3_discovery
 	icon = ce_city_watch
 
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
-
 	unlock_building = ce_city_watch
 
 	requires = pike_square
@@ -81,13 +46,6 @@ ce_city_watch_advance = {
 ce_stables_advance = {
 	age = age_1_traditions
 	icon = ce_stables
-
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
 
 	unlock_building = ce_stables
 
@@ -98,13 +56,6 @@ ce_swordsmith_guild_advance = {
 	age = age_1_traditions
 	icon = ce_swordsmith_guild
 
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
-
 	unlock_building = ce_swordsmith_guild
 
 	requires = metallurgy
@@ -113,13 +64,6 @@ ce_swordsmith_guild_advance = {
 ce_master_swordsmith_guild_advance = {
 	age = age_2_renaissance
 	icon = ce_master_swordsmith_guild
-
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
 
 	unlock_building = ce_master_swordsmith_guild
 
@@ -130,13 +74,6 @@ ce_armourers_guild_advance = {
 	age = age_1_traditions
 	icon = ce_armourers_guild
 
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
-
 	unlock_building = ce_armourers_guild
 
 	requires = iron_working
@@ -145,13 +82,6 @@ ce_armourers_guild_advance = {
 ce_grand_mercantile_exchange_advance = {
 	age = age_1_traditions
 	icon = ce_grand_mercantile_exchange
-
-	potential = {
-		OR = {
-			religion.group = religion_group:christian
-			religion.group = religion_group:muslim
-		}
-	}
 
 	unlock_building = ce_grand_mercantile_exchange
 
