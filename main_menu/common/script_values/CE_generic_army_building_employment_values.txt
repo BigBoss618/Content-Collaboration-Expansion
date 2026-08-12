@@ -1,5 +1,5 @@
 ﻿# Employment sizes are measured in thousands of pops.
-ce_age_1_military_building_employment = 0.25
-ce_age_2_military_building_employment = 0.5
-ce_age_3_military_building_employment = 1.0
-ce_major_guild_employment = 1.0
+ce_age_1_military_building_employment = 1
+ce_age_2_military_building_employment = 1.5
+ce_age_3_military_building_employment = 2
+ce_major_guild_employment = 1.25

@@ -1,1 +1,13 @@
 ﻿
+ce_voulgier_construction = {
+	weaponry = 0.4
+	leather = 0.1
+	tools = 0.2
+	category = regiment_construction
+}
+
+ce_voulgier_maintenance = {
+	weaponry = 0.1
+	leather = 0.06
+	category = regiment_maintenance
+}

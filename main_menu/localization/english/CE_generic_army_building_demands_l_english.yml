@@ -20,6 +20,7 @@
  ce_master_swordsmith_guild_construction: "Constructing Master Swordsmith Guilds"
  ce_armourers_guild_maintenance: "Armourers' Guild Upkeep"
  ce_grand_mercantile_exchange_maintenance: "Grand Mercantile Exchange Upkeep"
+ ce_royal_arsenal_maintenance: "$ce_royal_arsenal$ Maintenance"
 
  ce_armourers_guild_construction: "Constructing the Armourers' Guild"
  ce_grand_mercantile_exchange_construction: "Constructing the Grand Mercantile Exchange"

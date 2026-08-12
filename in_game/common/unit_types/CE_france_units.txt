@@ -1,1 +1,36 @@
 ﻿
+a_ce_voulgier = {
+	copy_from = a_age_2_renaissance_heavy_infantry
+	is_special = yes
+	upgrades_to = a_halberdiers
+
+	construction_demand = ce_voulgier_construction
+	maintenance_demand = ce_voulgier_maintenance
+
+	buildable = yes
+
+	# Modifiers intentionally left empty.
+
+	gfx_tags = { polearm_tag medium_tag }
+}
+
+a_ce_grand_bombard = {
+	copy_from = a_age_2_renaissance_artillery
+	is_special = yes
+	upgrades_to = a_falconet
+
+	buildable = yes
+
+	bombard_efficiency = 0.5
+}
+
+a_ce_serpentine = {
+	copy_from = a_age_2_renaissance_artillery
+	is_special = yes
+	upgrades_to = a_falconet
+
+	buildable = yes
+
+	initiative = 1
+	strength_damage_done = 0.1
+}
