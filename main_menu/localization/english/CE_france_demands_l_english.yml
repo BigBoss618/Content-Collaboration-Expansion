@@ -1,3 +1,5 @@
 ﻿l_english:
 
  #France Unit Demands
+ ce_voulgier_construction: "$a_ce_voulgier$ Construction"
+ ce_voulgier_maintenance: "$a_ce_voulgier$ Maintenance"

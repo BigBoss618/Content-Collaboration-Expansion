@@ -1,1 +1,8 @@
 ﻿l_english:
+
+ ce_voulgier_advance: "$a_ce_voulgier$"
+ ce_voulgier_advance_desc: "$a_ce_voulgier_desc$"
+ ce_grand_bombard_advance: "$a_ce_grand_bombard$"
+ ce_grand_bombard_advance_desc: "$a_ce_grand_bombard_desc$"
+ ce_serpentine_advance: "$a_ce_serpentine$"
+ ce_serpentine_advance_desc: "$a_ce_serpentine_desc$"

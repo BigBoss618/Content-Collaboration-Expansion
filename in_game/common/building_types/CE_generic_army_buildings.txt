@@ -5,7 +5,7 @@ ce_militia_drill_square = {
 	icon = ce_militia_drill_square
 	is_foreign = no
 	pop_type = soldiers
-	max_levels = 1
+	max_levels = 2
 
 	category = military_category
 	forbidden_for_estates = yes
@@ -21,7 +21,7 @@ ce_militia_drill_square = {
 
 	modifier = {
 		local_levy_size_modifier = 0.05
-		local_manpower = 0.005
+		local_manpower = 0.01
 	}
 
 	possible_production_methods = {
@@ -35,7 +35,7 @@ ce_town_watch = {
 	icon = ce_town_watch
 	is_foreign = no
 	pop_type = soldiers
-	max_levels = 1
+	max_levels = 2
 
 	category = military_category
 	forbidden_for_estates = yes
@@ -50,8 +50,8 @@ ce_town_watch = {
 	build_time = medium_soldier_building
 
 	modifier = {
-		local_defensive = 0.05
-		local_manpower = 0.01
+		local_defensive = 0.02
+		local_manpower = 0.012
 	}
 
 	possible_production_methods = {
@@ -65,13 +65,14 @@ ce_militia_barracks = {
 	icon = ce_militia_barracks
 	is_foreign = no
 	pop_type = soldiers
-	max_levels = 1
+	max_levels = 2
 
 	category = military_category
 	forbidden_for_estates = yes
 
 	employment_size = ce_age_2_military_building_employment
 
+	rural_settlement = no
 	town = yes
 	city = yes
 	megalopolis = yes
@@ -82,8 +83,8 @@ ce_militia_barracks = {
 	obsolete = ce_militia_drill_square
 
 	modifier = {
-		local_levy_size_modifier = 0.1
-		local_manpower = 0.05
+		local_levy_size_modifier = 0.05
+		local_manpower = 0.015
 	}
 
 	possible_production_methods = {
@@ -97,16 +98,17 @@ ce_town_guard = {
 	icon = ce_town_guard
 	is_foreign = no
 	pop_type = soldiers
-	max_levels = 1
+	max_levels = 2
 
 	category = military_category
 	forbidden_for_estates = yes
 
 	employment_size = ce_age_2_military_building_employment
 
+	rural_settlement = no
 	town = yes
 	city = yes
-	megalopolis = yes
+	megalopolis = no
 
 	important_for_AI = yes
 	build_time = soldier_building
@@ -115,7 +117,7 @@ ce_town_guard = {
 
 	modifier = {
 		local_defensive = 0.10
-		local_manpower = 0.05
+		local_manpower = 0.015
 	}
 
 	possible_production_methods = {
@@ -167,7 +169,7 @@ ce_stables = {
 
 	employment_size = ce_age_1_military_building_employment
 
-	rural_settlement = yes
+	rural_settlement = no
 	town = yes
 	city = yes
 	megalopolis = yes
@@ -180,8 +182,8 @@ ce_stables = {
 	build_time = medium_soldier_building
 
 	modifier = {
-		local_manpower = 0.00312
-		local_horses_output_modifier = 0.025
+		local_manpower = 0.01
+		local_horses_output_modifier = 0.02
 	}
 
 	possible_production_methods = {
@@ -362,6 +364,19 @@ ce_royal_arsenal = {
 	important_for_AI = yes
 	expensive = yes
 	build_time = large_capital_build_time
+
+	modifier = {
+		local_manpower = 0.015
+	}
+
+	capital_country_modifier = {
+		army_artillery_power = 0.02
+		artillery_bonus_vs_fort = 1
+	}
+
+	possible_production_methods = {
+		ce_royal_arsenal_maintenance
+	}
 
 	construction_demand = local_governor_construction
 }

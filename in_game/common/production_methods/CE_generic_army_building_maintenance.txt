@@ -92,3 +92,13 @@ ce_grand_mercantile_exchange_maintenance = {
 
 	category = building_maintenance
 }
+
+ce_royal_arsenal_maintenance = {
+	firearms = 1
+	leather = 1
+	cloth = 0.5
+	paper = 0.25
+	weaponry = 1
+	
+	category = building_maintenance
+}

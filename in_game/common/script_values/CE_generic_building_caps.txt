@@ -5,7 +5,7 @@ ce_stables_max_level = {
 		desc = "BUILDING_LEVEL_RGO_MAX"
 		value = rgo_level
 	}
-	max = 10
+	max = 5
 }
 
 ce_swordsmith_guild_max_level = {

@@ -1,1 +1,36 @@
 ﻿
+ce_voulgier_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = FRA
+	}
+
+	unlock_unit = a_ce_voulgier
+
+	requires = unlock_men_at_arms_advance
+}
+
+ce_grand_bombard_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = FRA
+	}
+
+	unlock_unit = a_ce_grand_bombard
+
+	requires = unlock_houfnice_advance
+}
+
+ce_serpentine_advance = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = FRA
+	}
+
+	unlock_unit = a_ce_serpentine
+
+	requires = unlock_houfnice_advance
+}
