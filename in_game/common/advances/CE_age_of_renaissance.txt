@@ -1,63 +1,32 @@
-﻿REPLACE:unlock_cavalry_advance = {
-	age = age_2_renaissance
-	unlock_unit = a_cavalrymen
-	
-
-	requires = armory_advance
-}
-REPLACE:unlock_hulk_advance = {
-	age = age_2_renaissance
-
-	requires = dock_advance
-
-	unlock_unit = n_hulk
-}
-REPLACE:slave_center_advance = {
+﻿REPLACE:slave_center_advance = {
 	age = age_2_renaissance
 	unlock_building = slave_center
 	requires = trade_range_advance_age_2
 }
-REPLACE:unlock_peasant_levy_advance = {
-	age = age_2_renaissance
-	unlock_levy = levy_a_peasant_levy
 
-	requires = armory_advance
-}
-REPLACE:naval_morale_advance_1 = {
-	age = age_2_renaissance
-
-	naval_morale = 0.25
-
-	requires = merchants_and_trade
-}
-REPLACE:medieval_military = {
-	age = age_2_renaissance
-	land_morale = 0.25
-	ai_weight = { add = 20 }
-
-	requires = recruitment_improvements_renaissance
-}
 REPLACE:rgo_construction_ren = {
 	age = age_2_renaissance
 	icon = efficient_mining
-	
+
 	requires = grant_privilege_cost_modifier_renaissance_advance
-	
+
 	global_rgo_build_time = -0.1
 }
+
 REPLACE:merchants_and_trade = {
 	age = age_2_renaissance
 	icon = global_trade_routes_advance
-	
+
 	naval_range = 250
 	trade_range = 250
 	colonial_range = 250
-	
+
 	ai_preference_tags = {
 		exploration
 	}
 	depth = 0
 }
+
 REPLACE:banking_advance = {
 	age = age_2_renaissance
 	icon = banking_advance

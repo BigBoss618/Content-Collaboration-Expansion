@@ -1,0 +1,10 @@
+﻿REPLACE:tolerance_idea = {
+	age = age_2_renaissance
+	icon = cultural_acceptance_advance
+	for = adm
+
+	requires = global_clergy_max_literacy_advance
+
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+}

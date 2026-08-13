@@ -1,0 +1,430 @@
+﻿##############################
+# Renaissance military tree
+#
+# Existing database entries are fully replaced so their vanilla effects,
+# unlocks, restrictions, and AI data survive the new tree layout.
+##############################
+
+##############################
+# Root: Gunpowder
+##############################
+
+REPLACE:gunpowder_advance = {
+	age = age_2_renaissance
+	icon = gunpowder_advance
+
+	military_tactics = 0.25
+
+	depth = 0
+	ai_weight = { add = 20 }
+}
+
+##############################
+# Medieval Military Production
+##############################
+
+ce_medieval_military_production_advance = {
+	age = age_2_renaissance
+	icon = ce_medieval_military_production_advance
+
+	global_weaponry_output_modifier = 0.1
+	global_iron_output_modifier = 0.1
+
+
+	requires = gunpowder_advance
+}
+
+REPLACE:ce_master_swordsmith_guild_advance = {
+	age = age_2_renaissance
+	icon = ce_master_swordsmith_guild
+
+	unlock_building = ce_master_swordsmith_guild
+
+	requires = ce_medieval_military_production_advance
+}
+
+REPLACE:armory_advance = {
+	age = age_2_renaissance
+
+	unlock_building = armory
+
+	requires = ce_medieval_military_production_advance
+	ai_weight = { add = 2000 }
+}
+
+REPLACE:gun_smith_advance = {
+	age = age_2_renaissance
+
+	unlock_building = gun_smith
+
+	requires = ce_medieval_military_production_advance
+
+	# Large vanilla AI score, below the Armory's priority.
+	ai_weight = { add = 1000 }
+}
+
+REPLACE:ce_town_guard_advance = {
+	age = age_2_renaissance
+	icon = ce_town_guard
+
+	unlock_building = ce_town_guard
+
+	requires = armory_advance
+}
+
+REPLACE:ce_militia_barracks_advance = {
+	age = age_2_renaissance
+	icon = ce_militia_barracks
+
+	unlock_building = ce_militia_barracks
+
+	requires = armory_advance
+}
+
+REPLACE:cannon_maker_advance = {
+	age = age_2_renaissance
+
+	unlock_building = cannon_maker
+
+	requires = gun_smith_advance
+	ai_weight = { add = 1.5 }
+}
+
+##############################
+# Medieval Military
+##############################
+
+REPLACE:medieval_military = {
+	age = age_2_renaissance
+
+	land_morale = 0.25
+	ai_weight = { add = 20 }
+
+	requires = gunpowder_advance
+}
+
+REPLACE:aristocracy = {
+	age = age_2_renaissance
+	government = monarchy
+
+	unlock_levy = levy_plated_knights
+
+	requires = medieval_military
+
+	allow = {
+		any_market_present_in_country = {
+			OR = {
+				is_produced_in_market = goods:tools
+				is_traded_in_market = goods:tools
+			}
+		}
+	}
+}
+
+REPLACE:unlock_peasant_levy_advance = {
+	age = age_2_renaissance
+	unlock_levy = levy_a_peasant_levy
+
+	requires = medieval_military
+}
+
+##############################
+# Professional Armies
+##############################
+
+REPLACE:professional_armies_advance = {
+	age = age_2_renaissance
+	icon = professional_armies_advance
+
+	allow = {
+		has_embraced_institution = institution:professional_armies
+	}
+
+	army_maintenance_efficiency = 0.1
+	navy_maintenance_efficiency = 0.1
+
+	requires = gunpowder_advance
+	ai_weight = { add = 100 }
+}
+
+REPLACE:regiment_reinforcement_speed_renaissance = {
+	age = age_2_renaissance
+	icon = regiment_reinforcement_speed_renaissance
+
+	regiment_reinforcement_speed = 0.1
+
+	requires = professional_armies_advance
+}
+
+REPLACE:land_morale_recovery_renaissance_advance = {
+	age = age_2_renaissance
+	icon = offensive_army
+
+	land_morale_recovery = 0.01
+
+	requires = regiment_reinforcement_speed_renaissance
+}
+
+REPLACE:correct_box_advance_renaissance = {
+	age = age_2_renaissance
+
+	correct_box_chance = 0.1
+
+	requires = regiment_reinforcement_speed_renaissance
+}
+
+REPLACE:recruitment_law_advance = {
+	age = age_2_renaissance
+	unlock_law = recruitment_law
+
+	requires = professional_armies_advance
+}
+
+REPLACE:army_initiative_ren = {
+	age = age_2_renaissance
+	icon = glorious_arms
+
+	army_initiative = 0.2
+
+	requires = professional_armies_advance
+}
+
+REPLACE:global_supply_limit_modifier_advance_2 = {
+	age = age_2_renaissance
+	icon = global_supply_limit_modifier_advance_5
+
+	global_supply_limit_modifier = 0.1
+
+	requires = professional_armies_advance
+}
+
+REPLACE:drill_army_advance = {
+	age = age_2_renaissance
+	icon = drill_army_advance
+
+	unlock_ability = drill_army
+
+	requires = regiment_reinforcement_speed_renaissance
+}
+
+REPLACE:recruitment_improvements_renaissance = {
+	age = age_2_renaissance
+	icon = recruitment_improvements_renaissance
+
+	regiment_recruit_speed = 0.2
+
+	requires = recruitment_law_advance
+}
+
+REPLACE:unlock_houfnice_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_houfnice
+
+	requires = recruitment_improvements_renaissance
+
+	# Secondary cross-branch prerequisite from the redesign.
+	allow = {
+		has_advance = cannon_maker_advance
+	}
+}
+
+REPLACE:unlock_handgonners_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_handgonners
+
+	requires = recruitment_improvements_renaissance
+
+	# Secondary cross-branch prerequisite from the redesign.
+	allow = {
+		has_advance = gun_smith_advance
+	}
+}
+
+REPLACE:unlock_men_at_arms_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_men_at_arms
+	unlock_levy = levy_a_men_at_arms
+
+	requires = recruitment_improvements_renaissance
+}
+
+REPLACE:unlock_crossbowmen_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_crossbowmen
+
+	requires = recruitment_improvements_renaissance
+}
+
+REPLACE:unlock_cavalry_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_cavalrymen
+
+	requires = recruitment_improvements_renaissance
+}
+
+REPLACE:unlock_heavy_cavalry_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_heavy_cavalrymen
+
+	requires = unlock_cavalry_advance
+}
+
+REPLACE:supply_depot_advance_age_2_renaissance = {
+	age = age_2_renaissance
+
+	supply_depot_capacity = 500
+
+	requires = global_supply_limit_modifier_advance_2
+}
+
+REPLACE:unlock_supply_carts = {
+	age = age_2_renaissance
+	unlock_unit = a_supply_carts
+
+	requires = recruitment_improvements_renaissance
+}
+
+##############################
+# Medieval Sailing
+##############################
+
+REPLACE:naval_morale_advance_1 = {
+	age = age_2_renaissance
+
+	naval_morale = 0.25
+
+	requires = gunpowder_advance
+}
+
+REPLACE:naval_initiative_ren = {
+	age = age_2_renaissance
+	icon = ship_building_advance
+
+	navy_initiative = 0.2
+
+	requires = naval_morale_advance_1
+}
+
+REPLACE:blockade_tactics = {
+	age = age_2_renaissance
+
+	blockade_efficiency = 0.1
+
+	requires = naval_morale_advance_1
+}
+
+REPLACE:dock_advance = {
+	age = age_2_renaissance
+
+	unlock_building = dock
+
+	requires = naval_morale_advance_1
+
+	# Secondary cross-branch prerequisite from the redesign.
+	allow = {
+		has_advance = professional_armies_advance
+	}
+
+	ai_weight = {
+		if = {
+			limit = {
+				has_ports = yes
+			}
+			add = {
+				value = 200
+				multiply = num_of_ports
+				divide = num_locations
+			}
+		}
+	}
+
+	ai_preference_tags = {
+		exploration
+	}
+}
+
+REPLACE:protected_harbor_advance = {
+	age = age_2_renaissance
+
+	unlock_building = protected_harbor
+
+	requires = naval_morale_advance_1
+
+	ai_weight = {
+		if = {
+			limit = {
+				has_ports = yes
+			}
+			add = {
+				value = 100
+				multiply = num_of_ports
+				divide = num_locations
+			}
+		}
+	}
+}
+
+REPLACE:coastal_fort_advance = {
+	age = age_2_renaissance
+
+	unlock_building = coastal_fort
+
+	requires = naval_morale_advance_1
+
+	ai_weight = {
+		if = {
+			limit = {
+				has_ports = yes
+			}
+			add = {
+				value = 50
+				multiply = num_of_ports
+				divide = num_locations
+			}
+		}
+	}
+}
+
+REPLACE:unlock_hulk_advance = {
+	age = age_2_renaissance
+	unlock_unit = n_hulk
+
+	requires = dock_advance
+}
+
+REPLACE:unlock_m_galley_advance = {
+	age = age_2_renaissance
+	unlock_unit = n_mediterrannean_galley
+
+	requires = dock_advance
+}
+
+REPLACE:unlock_early_carrack_advance = {
+	age = age_2_renaissance
+	unlock_unit = n_early_carrack
+
+	requires = dock_advance
+
+	ai_preference_tags = {
+		exploration
+	}
+}
+
+REPLACE:naval_repair_ren = {
+	age = age_2_renaissance
+	icon = maritime_advance_age_4
+
+	navy_repair_efficiency = 0.10
+
+	requires = dock_advance
+}
+
+REPLACE:rudimentary_coastal_ship_repair = {
+	age = age_2_renaissance
+	icon = rudimentary_coastal_ship_repair
+
+	ship_repair_at_sea = 0.025
+	ship_repair_at_sea_to_max_strength = 0.3
+
+	requires = naval_repair_ren
+}

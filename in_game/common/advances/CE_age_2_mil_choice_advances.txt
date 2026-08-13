@@ -1,0 +1,92 @@
+﻿REPLACE:glorious_arms = {
+	age = age_2_renaissance
+	icon = glorious_arms
+	for = mil
+
+	requires = drill_army_advance
+
+	land_morale_modifier = 0.05
+	naval_morale_modifier = 0.05
+}
+
+REPLACE:battlefield_commisions = {
+	age = age_2_renaissance
+	icon = expansionism
+	for = mil
+
+	requires = correct_box_advance_renaissance
+
+	army_tradition_from_battle = 1
+}
+
+REPLACE:finest_of_horses = {
+	age = age_2_renaissance
+	icon = finest_of_horses
+	for = mil
+
+	army_heavy_cavalry_power = 0.1
+	army_light_cavalry_power = 0.1
+
+	requires = unlock_heavy_cavalry_advance
+}
+
+REPLACE:regular_levy_training = {
+	age = age_2_renaissance
+	icon = drill_army_advance
+	for = mil
+
+	levy_combat_efficiency_modifier = 0.1
+	levy_recovery_modifier = 0.1
+
+	requires = drill_army_advance
+}
+
+REPLACE:open_levy_standards = {
+	age = age_2_renaissance
+	icon = regiment_reinforcement_speed_renaissance
+	for = mil
+
+	wrong_culture_levy_size = 0.25
+
+	requires = regular_levy_training
+}
+
+REPLACE:enforced_service = {
+	age = age_2_renaissance
+	icon = offensive_army
+	for = mil
+
+	requires = open_levy_standards
+
+	global_levy_size_modifier = 0.1
+}
+
+REPLACE:naval_glory = {
+	age = age_2_renaissance
+	icon = ship_building_advance
+	for = mil
+
+	requires = naval_morale_advance_1
+
+	monthly_navy_tradition = 0.1
+}
+
+REPLACE:boarding_parties = {
+	age = age_2_renaissance
+	icon = gunpowder_advance
+	for = mil
+
+	requires = naval_initiative_ren
+
+	naval_damage_done = 0.1
+}
+
+REPLACE:marine_regiments = {
+	age = age_2_renaissance
+	icon = global_trade_routes_advance
+	for = mil
+
+	requires = naval_initiative_ren
+
+	army_disembark_speed = 0.25
+}
