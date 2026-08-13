@@ -103,6 +103,15 @@ REPLACE:medieval_military = {
 	requires = gunpowder_advance
 }
 
+REPLACE:war_no_cb_cost_modifier_renaissance_advance = {
+	age = age_2_renaissance
+	icon = expansionism
+
+	war_no_cb_cost_modifier = -0.1
+
+	requires = medieval_military
+}
+
 REPLACE:aristocracy = {
 	age = age_2_renaissance
 	government = monarchy

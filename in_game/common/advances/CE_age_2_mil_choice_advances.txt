@@ -30,6 +30,17 @@ REPLACE:finest_of_horses = {
 	requires = unlock_heavy_cavalry_advance
 }
 
+REPLACE:fort_limit_2_advance = {
+	age = age_2_renaissance
+	icon = defensive_mentality
+	for = mil
+
+	requires = medieval_military
+
+	fort_limit_modifier = 0.1
+	global_garrison_size_modifier = 0.1
+}
+
 REPLACE:regular_levy_training = {
 	age = age_2_renaissance
 	icon = drill_army_advance
@@ -91,9 +102,9 @@ REPLACE:marine_regiments = {
 	army_disembark_speed = 0.25
 }
 
-advanced_sappers = {
+sappers_advance_age_2 = {
 	age = age_2_renaissance
-	icon = advanced_sappers
+	icon = sappers_advance_age_2
 	for = mil
 
 	requires = unlock_houfnice_advance

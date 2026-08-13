@@ -8,3 +8,47 @@
 	tolerance_heretic = 1
 	tolerance_heathen = 1
 }
+
+REPLACE:empiricism = {
+	age = age_2_renaissance
+	icon = scholasticism
+	for = adm
+
+	requires = anatomy_advance
+
+	research_speed_modifier = 0.05
+}
+
+REPLACE:innovativeness = {
+	age = age_2_renaissance
+	icon = scholasticism
+	for = adm
+
+	requires = empiricism
+
+	allow = {
+		has_advance = renaissance_advance
+	}
+
+	global_max_literacy = 5
+}
+
+REPLACE:benefits_for_mercenaries = {
+	age = age_2_renaissance
+	icon = regimental_system
+	for = adm
+
+	requires = recruitment_law_advance
+
+	mercenary_maintenance_efficiency = 0.1
+}
+
+REPLACE:court_accounting = {
+	age = age_2_renaissance
+	icon = court_accounting
+	for = adm
+
+	requires = chancery_records
+
+	court_spending_efficiency = 0.1
+}

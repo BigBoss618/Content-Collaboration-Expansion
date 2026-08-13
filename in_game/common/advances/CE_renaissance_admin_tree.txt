@@ -1,0 +1,333 @@
+﻿##############################
+# Renaissance administrative tree
+#
+# Existing database entries are fully replaced so their vanilla effects,
+# unlocks, restrictions, and AI data survive the new tree layout.
+##############################
+
+##############################
+# Root: Patron of the Arts
+##############################
+
+REPLACE:patron_of_art = {
+	age = age_2_renaissance
+
+	depth = 0
+
+	has_cultural_maintenance = yes
+	num_possible_artists = 1
+
+	unlock_interaction = commission_art
+}
+
+##############################
+# First row
+##############################
+
+REPLACE:renaissance_development = {
+	age = age_2_renaissance
+	icon = offensive_army
+
+	embrace_institution_cost_modifier = -0.10
+	revoke_privilege_cost_modifier = -0.05
+
+	requires = patron_of_art
+}
+
+REPLACE:renaissance_sculptures = {
+	age = age_2_renaissance
+	icon = renaissance_advance
+
+	monthly_prestige = 0.1
+	global_stone_output_modifier = 0.1
+	
+	requires = renaissance_advance
+}
+
+REPLACE:renaissance_court = {
+	age = age_2_renaissance
+	icon = scholasticism
+
+	diplomatic_spending_cost = -0.01
+	cultural_tradition_modifier = 0.10
+
+	requires = renaissance_advance
+}
+
+REPLACE:university_advance = {
+	age = age_2_renaissance
+
+	unlock_building = university
+	unlock_law = education_elites_law
+
+	requires = patron_of_art
+	ai_weight = { add = 1 }
+}
+
+REPLACE:renaissance_advance = {
+	age = age_2_renaissance
+	icon = renaissance_advance
+
+	cultural_influence = 1
+
+	requires = patron_of_art
+
+	allow = {
+		has_embraced_institution = institution:renaissance
+	}
+}
+
+##############################
+# Second row
+##############################
+
+REPLACE:local_nobility = {
+	age = age_2_renaissance
+	government = monarchy
+
+	nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+
+	requires = renaissance_development
+}
+
+REPLACE:bureaucracy_law_advance = {
+	age = age_2_renaissance
+
+	global_bureaucracy_implementation_efficiency = 0.2
+	unlock_law = bureaucracy_law
+
+	requires = renaissance_development
+}
+
+REPLACE:grant_privilege_cost_modifier_renaissance_advance = {
+	age = age_2_renaissance
+
+	grant_privilege_cost_modifier = -0.1
+
+	requires = renaissance_development
+}
+
+REPLACE:vibrant_court_advance = {
+	age = age_2_renaissance
+	icon = cultural_acceptance_advance
+
+	cultures_capacity = 1
+
+	requires = renaissance_court
+	ai_weight = { add = 2 }
+}
+
+REPLACE:global_clergy_max_literacy_advance = {
+	age = age_2_renaissance
+
+	global_clergy_max_literacy = 10
+
+	requires = university_advance
+}
+
+REPLACE:global_burghers_max_literacy_advance = {
+	age = age_2_renaissance
+
+	global_burghers_max_literacy = 10
+
+	requires = university_advance
+}
+
+REPLACE:global_nobles_max_literacy_advance = {
+	age = age_2_renaissance
+
+	global_nobles_max_literacy = 10
+
+	requires = university_advance
+}
+
+REPLACE:art_school_advance = {
+	age = age_2_renaissance
+
+	unlock_building = art_school
+
+	requires = university_advance
+}
+
+REPLACE:anatomy_advance = {
+	age = age_2_renaissance
+
+	global_disease_resistance = 0.03
+	global_life_expectancy = 2
+
+	requires = university_advance
+}
+
+REPLACE:government_size_renaissance = {
+	age = age_2_renaissance
+
+	government_size = 1
+
+	requires = renaissance_advance
+	ai_weight = { add = 2 }
+}
+
+REPLACE:renaissance_thought = {
+	age = age_2_renaissance
+
+	government_reform_slots = 1
+
+	requires = renaissance_advance
+}
+
+##############################
+# Third row
+##############################
+
+REPLACE:national_assemblies_advance = {
+	age = age_2_renaissance
+
+	unlock_government_reform = national_assemblies
+
+	requires = local_nobility
+}
+
+REPLACE:law_making_renaissance = {
+	age = age_2_renaissance
+
+	change_policy_cost_modifier = -0.05
+
+	requires = grant_privilege_cost_modifier_renaissance_advance
+}
+
+REPLACE:diplomatic_range_age_1 = {
+	age = age_2_renaissance
+	icon = diplomatic_range_age_1
+
+	diplomatic_range_modifier = 0.25
+
+	requires = grant_privilege_cost_modifier_renaissance_advance
+}
+
+REPLACE:theater_advance = {
+	age = age_2_renaissance
+
+	unlock_building = theater
+
+	requires = art_school_advance
+}
+
+REPLACE:early_council_hall_advance = {
+	age = age_2_renaissance
+
+	unlock_building = early_council_hall
+
+	requires = government_size_renaissance
+	ai_weight = { add = 10 }
+}
+
+REPLACE:crown_power_advance_renaissance = {
+	age = age_2_renaissance
+	icon = crown_power_advance_renaissance
+
+	global_crown_estate_power = 0.10
+
+	requires = government_size_renaissance
+	ai_weight = { add = 2 }
+}
+
+REPLACE:nobles_rights_laws_advance = {
+	age = age_2_renaissance
+
+	unlock_law = nobles_rights_laws
+
+	requires = government_size_renaissance
+}
+
+REPLACE:chancery_records = {
+	age = age_2_renaissance
+	icon = smooth_administration
+
+	chancery_cap_level = 1
+
+	requires = government_size_renaissance
+}
+
+##############################
+# Fourth row
+##############################
+
+REPLACE:renaissance_subject_opinions_advance = {
+	age = age_2_renaissance
+
+	subject_opinions = 10
+
+	requires = diplomatic_range_age_1
+
+	ai_weight = {
+		if = {
+			limit = {
+				root = {
+					subjects_relative_power > 0.25
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+REPLACE:improve_relation_impact_renaissance = {
+	age = age_2_renaissance
+	icon = court_accounting
+
+	improve_relation_impact = 0.10
+
+	requires = diplomatic_range_age_1
+
+	ai_weight = {
+		if = {
+			limit = {
+				root = {
+					subjects_relative_power > 0.25
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+REPLACE:power_projection_advance_2 = {
+	age = age_2_renaissance
+
+	power_projection = 5
+
+	requires = crown_power_advance_renaissance
+}
+
+##############################
+# Fifth row
+##############################
+
+REPLACE:late_feudal_relations = {
+	age = age_2_renaissance
+	icon = late_feudal_relations
+
+	subject_loyalty = 5
+
+	requires = renaissance_subject_opinions_advance
+
+	ai_weight = {
+		if = {
+			limit = {
+				root = {
+					subjects_relative_power > 0.25
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+REPLACE:subject_integration = {
+	age = age_2_renaissance
+	icon = glorious_arms
+
+	diplomatic_annexation_efficiency = 0.2
+
+	requires = renaissance_subject_opinions_advance
+}

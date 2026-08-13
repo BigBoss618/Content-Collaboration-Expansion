@@ -1,0 +1,18 @@
+﻿REPLACE:national_assemblies = {
+	allow = {
+		OR = {
+			parliament_type = parliament_type:estate_parliament
+			parliament_type = parliament_type:constitutional_parliament
+		}
+		OR = {
+			has_reform = government_reform:peasant_republic_reform
+			modifier:peasants_estate_can_participate_in_parliament = yes
+		}
+	}
+	country_modifier = {
+		parliament_duration_modifier = 1
+		parliament_base_support = 0.25
+		monthly_towards_free_subjects = societal_value_large_monthly_move
+		peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
+	}
+}

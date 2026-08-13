@@ -1,6 +1,1 @@
-﻿REPLACE:national_assemblies_advance = {
-	age = age_2_renaissance
-
-    requires = renaissance_thought
-	unlock_government_reform = national_assemblies
-}
+﻿# Age 2 government advances are organized in CE_renaissance_admin_tree.txt.
