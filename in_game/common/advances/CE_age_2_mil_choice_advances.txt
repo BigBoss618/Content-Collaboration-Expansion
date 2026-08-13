@@ -90,3 +90,13 @@ REPLACE:marine_regiments = {
 
 	army_disembark_speed = 0.25
 }
+
+advanced_sappers = {
+	age = age_2_renaissance
+	icon = advanced_sappers
+	for = mil
+
+	requires = unlock_houfnice_advance
+
+	siege_ability = 0.2
+}
