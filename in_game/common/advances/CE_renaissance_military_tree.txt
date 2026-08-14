@@ -305,6 +305,16 @@ REPLACE:naval_morale_advance_1 = {
 	requires = gunpowder_advance
 }
 
+ce_press_gangs_and_shipwrights = {
+	age = age_2_renaissance
+	icon = end_of_shipbuilding_guilds
+
+	requires = naval_morale_advance_1
+
+	global_naval_supplies_output_modifier = 0.10
+	global_sailors_modifier = 0.10
+}
+
 REPLACE:naval_initiative_ren = {
 	age = age_2_renaissance
 	icon = ship_building_advance

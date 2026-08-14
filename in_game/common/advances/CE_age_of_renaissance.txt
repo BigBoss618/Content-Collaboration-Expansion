@@ -1,14 +1,14 @@
 ﻿REPLACE:slave_center_advance = {
 	age = age_2_renaissance
 	unlock_building = slave_center
-	requires = trade_range_advance_age_2
+	requires = maritime_advance_age_2
 }
 
 REPLACE:rgo_construction_ren = {
 	age = age_2_renaissance
 	icon = efficient_mining
 
-	requires = grant_privilege_cost_modifier_renaissance_advance
+	requires = renaissance_city_rights
 
 	global_rgo_build_time = -0.1
 }
@@ -39,4 +39,155 @@ REPLACE:banking_advance = {
 	requires = merchants_and_trade
 
 	allow = { has_embraced_institution = institution:banking }
+}
+
+REPLACE:maritime_advance_age_2 = {
+	age = age_2_renaissance
+	icon = maritime_advance_age_2
+
+	requires = merchants_and_trade
+
+	global_maritime_presence_modifier = 0.1
+}
+
+REPLACE:renaissance_city_rights = {
+	age = age_2_renaissance
+	icon = religious_toleration
+
+	requires = merchants_and_trade
+
+	city_upgrade_cost_modifier = -0.1
+	megalopolis_upgrade_cost_modifier = -0.1
+	town_upgrade_cost_modifier = -0.1
+}
+
+ce_monetary_discipline_advance = {
+	age = age_2_renaissance
+	icon = reduce_inflations_advance
+
+	requires = standardized_coins
+
+	monthly_inflation = -0.0001
+}
+
+ce_double_entry_treasury_advance = {
+	age = age_2_renaissance
+	icon = hsa_hanseatic_treasury
+
+	requires = banking_advance
+
+	tax_income_efficiency = 0.025
+}
+
+ce_frugal_administration_advance = {
+	age = age_2_renaissance
+	icon = nav_efficient_bureaucracy
+
+	requires = ce_double_entry_treasury_advance
+
+	building_upkeep_efficiency = 0.05
+}
+
+ce_merchant_capital_advance = {
+	age = age_2_renaissance
+	icon = gra_modernized_economy
+
+	requires = ce_double_entry_treasury_advance
+
+	global_production_efficiency = 0.025
+}
+
+ce_circulating_liquidity_advance = {
+	age = age_2_renaissance
+	icon = swiss_recovery_and_prosperity
+
+	requires = ce_merchant_capital_advance
+
+	global_non_rural_monthly_prosperity = 0.001
+}
+
+REPLACE:pop_promote_actions_advance = {
+	age = age_2_renaissance
+
+	requires = banking_advance
+
+	unlock_cabinet_action = pop_promote_action
+}
+
+REPLACE:entrepot_advance = {
+	age = age_2_renaissance
+
+	requires = banking_advance
+
+	unlock_building = entrepot
+
+	ai_weight = {
+		if = {
+			limit = {
+				has_markets = yes
+			}
+
+			add = 250
+		}
+	}
+}
+
+REPLACE:paper_guild_cloth_maintenance_advance = {
+	age = age_2_renaissance
+
+	requires = counting_house_advance
+
+	unlock_production_method = paper_guild_cloth_maintenance
+}
+
+REPLACE:trade_range_advance_age_2 = {
+	age = age_2_renaissance
+	icon = zmw_merchant_taxes
+
+	requires = maritime_advance_age_2
+
+	trade_range = 250
+}
+
+REPLACE:renaissance_urbanisation = {
+	age = age_2_renaissance
+
+	requires = renaissance_city_rights
+
+	global_max_rgo_size_modifier_in_non_rural = 0.1
+}
+
+REPLACE:recovery_efforts = {
+	age = age_2_renaissance
+	icon = offensive_army
+
+	requires = renaissance_urbanisation
+
+	global_devastation_recovery = 0.005
+}
+
+REPLACE:rgo_size_advance_renaissance = {
+	age = age_2_renaissance
+
+	requires = renaissance_urbanisation
+
+	global_max_rgo_size_modifier = 0.10
+}
+
+REPLACE:pop_promotion_speed_age_2 = {
+	age = age_2_renaissance
+	icon = improved_foraging
+
+	requires = renaissance_city_rights
+
+	global_pop_promotion_speed_modifier = 0.1
+}
+
+REPLACE:pound_lock_canals_advance = {
+	age = age_2_renaissance
+
+	requires = renaissance_urbanisation
+
+	starting_technology_level = 3
+	unlock_building = pound_lock_canal_infrastructure
 }

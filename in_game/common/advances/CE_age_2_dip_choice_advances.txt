@@ -1,1 +1,64 @@
-﻿
+﻿REPLACE:marcher_lords = {
+	age = age_2_renaissance
+	icon = diplomatic_influence
+	for = dip
+
+	requires = grant_privilege_cost_modifier_renaissance_advance
+
+	unlock_subject_type = march
+	unlock_town_rights = ce_marcher_domain
+}
+
+REPLACE:shrewd_commerce_practice = {
+	age = age_2_renaissance
+	icon = zmw_merchant_taxes
+	for = dip
+
+	requires = merchants_and_trade
+
+	global_trade_center_power = 0.05
+	trade_income = 0.05
+}
+
+REPLACE:merchant_traditions = {
+	age = age_2_renaissance
+	icon = merchant_power_from_maritime_reformation_advance
+	for = dip
+
+	requires = shrewd_commerce_practice
+
+	burghers_estate_max_tax = 0.05
+	burghers_estate_target_satisfaction = 0.05
+}
+
+REPLACE:privateers = {
+	age = age_2_renaissance
+	icon = letters_of_marque
+	for = dip
+
+	requires = naval_morale_advance_1
+
+	can_hire_privateers = yes
+}
+
+REPLACE:tribute_system = {
+	age = age_2_renaissance
+	icon = debt_and_loans
+	for = dip
+
+	requires = benign_diplomats
+
+	subject_income_modifier = 0.10
+	subject_loyalty = 5
+}
+
+REPLACE:influence = {
+	age = age_2_renaissance
+	icon = expansionism
+	for = dip
+
+	requires = benign_diplomats
+
+	antagonism_received_modifier = -0.05
+	global_war_score_efficiency = 0.1
+}

@@ -204,6 +204,14 @@ REPLACE:diplomatic_range_age_1 = {
 	requires = grant_privilege_cost_modifier_renaissance_advance
 }
 
+REPLACE:spy_construction_renaissance = {
+	age = age_2_renaissance
+
+	requires = diplomatic_range_age_1
+
+	spy_network_construction = 0.1
+}
+
 REPLACE:theater_advance = {
 	age = age_2_renaissance
 
