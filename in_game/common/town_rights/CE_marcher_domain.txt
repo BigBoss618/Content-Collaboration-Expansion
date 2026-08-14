@@ -1,13 +1,13 @@
-ce_marcher_domain = {
+﻿ce_marcher_domain = {
 	kept_at_conquest = no
 
 	allow = {
 		scope:target = { is_border = yes }
 	}
 	location_modifier = {
-		monthly_manpower = 10
+		local_manpower = 0.01
 		local_levy_size_modifier = 0.2
-		local_hostile_attrition = 0.01
+		local_hostile_attrition = 1
 	}
 
 	color = hsv { 0.07 0.55 0.55 }

@@ -62,3 +62,13 @@ REPLACE:influence = {
 	antagonism_received_modifier = -0.05
 	global_war_score_efficiency = 0.1
 }
+
+ce_hawkish_negotiations = {
+	age = age_2_renaissance
+	icon = imperial_ambitions
+	for = dip
+
+	requires = diplomatic_range_age_1
+
+	global_integration_speed_modifier = 0.1
+}

@@ -184,7 +184,7 @@ REPLACE:national_assemblies_advance = {
 
 	unlock_government_reform = national_assemblies
 
-	requires = local_nobility
+	requires = law_making_renaissance
 }
 
 REPLACE:law_making_renaissance = {
