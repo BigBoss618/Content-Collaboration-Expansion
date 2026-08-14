@@ -131,7 +131,7 @@ a_ce_magyar_cavalry_3 = {
 }
 
 a_ce_bosnian_archers = {
-	copy_from = a_age_1_traditions_auxiliary
+	copy_from = a_age_1_traditions_light_infantry
 	is_special = yes
 	upgrades_to = a_ce_bosnian_archers_2
 
@@ -151,7 +151,7 @@ a_ce_bosnian_archers = {
 }
 
 a_ce_bosnian_archers_2 = {
-	copy_from = a_age_2_renaissance_auxiliary
+	copy_from = a_age_2_renaissance_light_infantry
 	is_special = yes
 
 	maintenance_demand = archer_infantry_maintenance

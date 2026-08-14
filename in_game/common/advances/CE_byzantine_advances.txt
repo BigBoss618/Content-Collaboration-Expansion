@@ -75,6 +75,7 @@ ce_trebizond_archers_advance = {
 
 	potential = {
 		has_or_had_tag = BYZ
+		has_or_had_tag = TRE
 	}
 
 	unlock_unit = a_ce_trebizond_archers
@@ -183,6 +184,7 @@ ce_trebizond_archers_2_advance = {
 
 	potential = {
 		has_or_had_tag = BYZ
+		has_or_had_tag = TRE
 	}
 
 	unlock_unit = a_ce_trebizond_archers_2
