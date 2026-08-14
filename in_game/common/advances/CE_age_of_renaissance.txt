@@ -149,6 +149,15 @@ REPLACE:trade_range_advance_age_2 = {
 	trade_range = 250
 }
 
+REPLACE:merchant_power_from_maritime_renaissance_advance = {
+	age = age_2_renaissance
+	icon = global_trade_routes_advance
+
+	requires = trade_range_advance_age_2
+
+	merchant_power_from_maritime = 0.025
+}
+
 REPLACE:renaissance_urbanisation = {
 	age = age_2_renaissance
 
@@ -171,7 +180,7 @@ REPLACE:rgo_size_advance_renaissance = {
 
 	requires = renaissance_urbanisation
 
-	global_max_rgo_size_modifier = 0.10
+	global_max_rgo_size_modifier = 0.1
 }
 
 REPLACE:pop_promotion_speed_age_2 = {
