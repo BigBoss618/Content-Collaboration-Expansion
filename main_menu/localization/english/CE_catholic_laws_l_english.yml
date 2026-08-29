@@ -1,0 +1,10 @@
+﻿l_english:
+
+ ce_direct_papal_control: "Direct Papal Control"
+ ce_direct_papal_control_desc: "The Holy See will direct the machinery of the Inquisition from Rome itself. Papal authority will intensify missionary work and enforce stricter doctrinal discipline throughout the Catholic world."
+ ce_resist_calvinism_policy: "Resist Calvinism"
+ ce_resist_calvinism_policy_desc: "We shall coordinate our clergy and magistrates against the spread of Calvinist teaching, reinforcing Catholic discipline and restoring wavering communities to the Church."
+ ce_resist_lutheranism_policy: "Resist Lutheranism"
+ ce_resist_lutheranism_policy_desc: "We shall coordinate our clergy and magistrates against the spread of Lutheran teaching, reinforcing Catholic discipline and restoring wavering communities to the Church."
+ CE_venetian_inquisitors: "Venetian Inquisitors"
+ CE_venetian_inquisitors_desc: "$state_inquisitors_desc$"

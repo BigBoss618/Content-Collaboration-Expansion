@@ -1,0 +1,132 @@
+REPLACE:inquisition_law = {
+	law_category = religious
+	law_religion_group = {
+		catholic
+	}
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	ce_direct_papal_control = {
+		potential = {
+			tag = PAP
+		}
+		country_modifier = {
+			monthly_religious_influence = 0.1
+			global_pop_conversion_speed_modifier = 0.1
+			crown_power_from_population = 0.05
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	papal_control = {
+		country_modifier = {
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+			global_pop_conversion_speed_modifier = 0.1
+			tithe_price_cost_modifier = 0.25
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	local_courts = {
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.1
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	ce_resist_calvinism_policy = {
+		allow = {
+			current_age_or_later = { age = age_4_reformation }
+		}
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.1
+			national_calvinism_movement_resistance_modifier = 0.2
+			papal_relations = 50
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	ce_resist_lutheranism_policy = {
+		allow = {
+			current_age_or_later = { age = age_4_reformation }
+		}
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.1
+			national_lutheranism_movement_resistance_modifier = 0.2
+			papal_relations = 50
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	CE_venetian_inquisitors = {
+		unique = yes
+		potential = {
+			NOT = { tag = PAP }
+			culture = culture:venetian
+		}
+		country_modifier = {
+			global_estate_max_tax = 0.02
+			tolerance_own = 1
+			global_pop_conversion_speed_modifier = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	council_of_three_lands_policy = {
+		unique = yes
+		potential = {
+			has_advance = council_of_three_lands_advance
+		}
+		allow = {
+			religion_percentage_in_country = {
+				religion = religion:judaism
+				value > 0
+			}
+		}
+		country_modifier = {
+			cultures_capacity = 1
+			tolerance_heathen = 1
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	spa_inquisition_policy = { # Spanish Inquisition
+		unique = yes
+		potential = {
+			OR = {
+				has_or_had_tag = CAS
+				has_or_had_tag = SPA
+				culture = culture:castilian
+			}
+			has_unlocked_policy_trigger = { type = spa_inquisition_policy }
+		}
+
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.2
+			counter_espionage = 0.2
+			tolerance_heathen = -2
+			tolerance_heretic = -2
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+}

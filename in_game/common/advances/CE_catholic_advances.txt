@@ -1,0 +1,91 @@
+REPLACE:res_publica_christiana = {
+	age = age_1_traditions
+
+	potential = {
+		religion.group = religion_group:christian
+	}
+
+	diplomatic_reputation = 1
+	monthly_diplomats = 0.05
+
+	requires = organized_religion
+}
+
+REPLACE:roman_orthodoxy = {
+	age = age_1_traditions
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	cultural_tradition_modifier = 0.1
+	papal_relations = 25
+
+	requires = res_publica_christiana
+}
+
+REPLACE:marian_devotion = {
+	age = age_1_traditions
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	stability_investment = cabinet_stability_investment
+
+	requires = roman_orthodoxy
+
+	ai_weight = { add = 10 }
+}
+
+REPLACE:crusading_knights = {
+	age = age_1_traditions
+	icon = feudalism_advance
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	damage_done_versus_heathens_modifier = 0.05
+	damage_done_versus_heretics_modifier = 0.05
+	monthly_army_tradition = 0.05
+
+	requires = res_publica_christiana
+}
+
+REPLACE:catholic_pilgrimages = {
+	age = age_1_traditions
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	monthly_religious_influence = 0.15
+
+	requires = roman_orthodoxy
+}
+
+REPLACE:preaching_friars = {
+	age = age_2_renaissance
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	global_pop_conversion_speed_modifier = 0.2
+
+	requires = inquisition_advance
+}
+
+REPLACE:denounce_heretics = {
+	age = age_2_renaissance
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	clergy_estate_agenda_impact = 0.1
+	clergy_estate_satisfaction_recovery = 0.002
+
+	requires = inquisition_advance
+}

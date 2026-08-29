@@ -102,6 +102,7 @@ REPLACE:bureaucracy_law_advance = {
 REPLACE:grant_privilege_cost_modifier_renaissance_advance = {
 	age = age_2_renaissance
 
+	global_estate_satisfaction_recovery = 0.001
 	grant_privilege_cost_modifier = -0.1
 
 	requires = renaissance_development
